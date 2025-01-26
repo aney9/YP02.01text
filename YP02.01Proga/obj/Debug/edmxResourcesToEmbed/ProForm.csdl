@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProFormModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="RoleSotrudnikas">
+    <Key>
+      <PropertyRef Name="ID_RoleSotrudnik" />
+    </Key>
+    <Property Name="ID_RoleSotrudnik" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoleSotrudnik" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Sotrudniki" Relationship="Self.FK__Sotrudnik__RoleS__5DCAEF64" FromRole="RoleSotrudnikas" ToRole="Sotrudniki" />
+  </EntityType>
+  <EntityType Name="Sotrudniki">
+    <Key>
+      <PropertyRef Name="ID_Sotrudnik" />
+    </Key>
+    <Property Name="ID_Sotrudnik" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SotrudnikName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SotrudnikSurname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SotrudnikMiddleName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Loginn" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Passwordd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="RoleSotrudnik_ID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="RoleSotrudnikas" Relationship="Self.FK__Sotrudnik__RoleS__5DCAEF64" FromRole="Sotrudniki" ToRole="RoleSotrudnikas" />
+  </EntityType>
+  <EntityType Name="SrokiAbonements">
+    <Key>
+      <PropertyRef Name="ID_SrokAbonementa" />
+    </Key>
+    <Property Name="ID_SrokAbonementa" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SrokAbonementa" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Abonements1" Relationship="ProFormModel.FK__Abonement__SrokA__4222D4EF1" FromRole="SrokiAbonements" ToRole="Abonements1" />
+  </EntityType>
+  <Association Name="FK__Sotrudnik__RoleS__5DCAEF64">
+    <End Role="RoleSotrudnikas" Type="Self.RoleSotrudnikas" Multiplicity="1" />
+    <End Role="Sotrudniki" Type="Self.Sotrudniki" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RoleSotrudnikas">
+        <PropertyRef Name="ID_RoleSotrudnik" />
+      </Principal>
+      <Dependent Role="Sotrudniki">
+        <PropertyRef Name="RoleSotrudnik_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ProFormEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="RoleSotrudnikas" EntityType="Self.RoleSotrudnikas" />
+    <EntitySet Name="Sotrudniki" EntityType="Self.Sotrudniki" />
+    <EntitySet Name="SrokiAbonements" EntityType="Self.SrokiAbonements" />
+    <AssociationSet Name="FK__Sotrudnik__RoleS__5DCAEF64" Association="Self.FK__Sotrudnik__RoleS__5DCAEF64">
+      <End Role="RoleSotrudnikas" EntitySet="RoleSotrudnikas" />
+      <End Role="Sotrudniki" EntitySet="Sotrudniki" />
+    </AssociationSet>
+    <EntitySet Name="Abonements1Set" EntityType="ProFormModel.Abonements1" />
+    <EntitySet Name="Clients1Set" EntityType="ProFormModel.Clients1" />
+    <EntitySet Name="Oplati1Set" EntityType="ProFormModel.Oplati1" />
+    <EntitySet Name="Treners1Set" EntityType="ProFormModel.Treners1" />
+    <EntitySet Name="TrenerTypes1Set" EntityType="ProFormModel.TrenerTypes1" />
+    <EntitySet Name="TypeDeystviyas1Set" EntityType="ProFormModel.TypeDeystviyas1" />
+    <EntitySet Name="Zaniatiya1Set" EntityType="ProFormModel.Zaniatiya1" />
+    <EntitySet Name="ZaniatiyaClients1Set" EntityType="ProFormModel.ZaniatiyaClients1" />
+    <AssociationSet Name="FK__Abonement__SrokA__4222D4EF1" Association="ProFormModel.FK__Abonement__SrokA__4222D4EF1">
+      <End Role="SrokiAbonements" EntitySet="SrokiAbonements" />
+      <End Role="Abonements1" EntitySet="Abonements1Set" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Abonement__TypeD__412EB0B6" Association="ProFormModel.FK__Abonement__TypeD__412EB0B6">
+      <End Role="TypeDeystviyas1" EntitySet="TypeDeystviyas1Set" />
+      <End Role="Abonements1" EntitySet="Abonements1Set" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Clients__Aboneme__45F365D3" Association="ProFormModel.FK__Clients__Aboneme__45F365D3">
+      <End Role="Abonements1" EntitySet="Abonements1Set" />
+      <End Role="Clients1" EntitySet="Clients1Set" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Oplati__Client_I__5535A963" Association="ProFormModel.FK__Oplati__Client_I__5535A963">
+      <End Role="Clients1" EntitySet="Clients1Set" />
+      <End Role="Oplati1" EntitySet="Oplati1Set" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Zaniatiya__Clien__52593CB8" Association="ProFormModel.FK__Zaniatiya__Clien__52593CB8">
+      <End Role="Clients1" EntitySet="Clients1Set" />
+      <End Role="ZaniatiyaClients1" EntitySet="ZaniatiyaClients1Set" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Treners__TrenerT__4BAC3F29" Association="ProFormModel.FK__Treners__TrenerT__4BAC3F29">
+      <End Role="TrenerTypes1" EntitySet="TrenerTypes1Set" />
+      <End Role="Treners1" EntitySet="Treners1Set" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Zaniatiya__Trene__4E88ABD4" Association="ProFormModel.FK__Zaniatiya__Trene__4E88ABD4">
+      <End Role="Treners1" EntitySet="Treners1Set" />
+      <End Role="Zaniatiya1" EntitySet="Zaniatiya1Set" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Zaniatiya__Zania__5165187F" Association="ProFormModel.FK__Zaniatiya__Zania__5165187F">
+      <End Role="Zaniatiya1" EntitySet="Zaniatiya1Set" />
+      <End Role="ZaniatiyaClients1" EntitySet="ZaniatiyaClients1Set" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Abonements1">
+    <Key>
+      <PropertyRef Name="ID_Abonement" />
+    </Key>
+    <Property Name="ID_Abonement" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cost" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="ColvoPosesheniy" Type="Int32" Nullable="false" />
+    <Property Name="TypeDeystviya_ID" Type="Int32" Nullable="false" />
+    <Property Name="SrokAbonementa_ID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="SrokiAbonements" Relationship="ProFormModel.FK__Abonement__SrokA__4222D4EF1" FromRole="Abonements1" ToRole="SrokiAbonements" />
+    <NavigationProperty Name="TypeDeystviyas" Relationship="ProFormModel.FK__Abonement__TypeD__412EB0B6" FromRole="Abonements1" ToRole="TypeDeystviyas1" />
+    <NavigationProperty Name="Clients" Relationship="ProFormModel.FK__Clients__Aboneme__45F365D3" FromRole="Abonements1" ToRole="Clients1" />
+  </EntityType>
+  <EntityType Name="Clients1">
+    <Key>
+      <PropertyRef Name="ID_Client" />
+    </Key>
+    <Property Name="ID_Client" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ClientName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ClientSurname" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ClientMiddlename" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PhoneNumber" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="DatePokupki" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="DateOkonchaniya" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Abonement_ID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Abonements" Relationship="ProFormModel.FK__Clients__Aboneme__45F365D3" FromRole="Clients1" ToRole="Abonements1" />
+    <NavigationProperty Name="Oplati" Relationship="ProFormModel.FK__Oplati__Client_I__5535A963" FromRole="Clients1" ToRole="Oplati1" />
+    <NavigationProperty Name="ZaniatiyaClients" Relationship="ProFormModel.FK__Zaniatiya__Clien__52593CB8" FromRole="Clients1" ToRole="ZaniatiyaClients1" />
+  </EntityType>
+  <EntityType Name="Oplati1">
+    <Key>
+      <PropertyRef Name="ID_Oplati" />
+    </Key>
+    <Property Name="ID_Oplati" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DateOplati" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CodeOplati" Type="Int32" Nullable="false" />
+    <Property Name="Skidka" Type="Boolean" Nullable="false" />
+    <Property Name="Summa" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="Client_ID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Clients" Relationship="ProFormModel.FK__Oplati__Client_I__5535A963" FromRole="Oplati1" ToRole="Clients1" />
+  </EntityType>
+  <EntityType Name="Treners1">
+    <Key>
+      <PropertyRef Name="ID_Trener" />
+    </Key>
+    <Property Name="ID_Trener" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TrenerName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TrenerSurname" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TrenerMiddleName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Passwordd" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TrenerTypes_ID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TrenerTypes" Relationship="ProFormModel.FK__Treners__TrenerT__4BAC3F29" FromRole="Treners1" ToRole="TrenerTypes1" />
+    <NavigationProperty Name="Zaniatiya" Relationship="ProFormModel.FK__Zaniatiya__Trene__4E88ABD4" FromRole="Treners1" ToRole="Zaniatiya1" />
+  </EntityType>
+  <EntityType Name="TrenerTypes1">
+    <Key>
+      <PropertyRef Name="ID_TrenerTypes" />
+    </Key>
+    <Property Name="ID_TrenerTypes" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TrenerType" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Treners" Relationship="ProFormModel.FK__Treners__TrenerT__4BAC3F29" FromRole="TrenerTypes1" ToRole="Treners1" />
+  </EntityType>
+  <EntityType Name="TypeDeystviyas1">
+    <Key>
+      <PropertyRef Name="ID_TypeDeystviya" />
+    </Key>
+    <Property Name="ID_TypeDeystviya" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TypeDeystviya" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Abonements" Relationship="ProFormModel.FK__Abonement__TypeD__412EB0B6" FromRole="TypeDeystviyas1" ToRole="Abonements1" />
+  </EntityType>
+  <EntityType Name="Zaniatiya1">
+    <Key>
+      <PropertyRef Name="ID_Zaniatiya" />
+    </Key>
+    <Property Name="ID_Zaniatiya" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NameZaniatiya" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateZaniatiya" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ColvoHours" Type="Int32" Nullable="false" />
+    <Property Name="ColvoUchastnikov" Type="Int32" Nullable="false" />
+    <Property Name="Trener_ID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Treners" Relationship="ProFormModel.FK__Zaniatiya__Trene__4E88ABD4" FromRole="Zaniatiya1" ToRole="Treners1" />
+    <NavigationProperty Name="ZaniatiyaClients" Relationship="ProFormModel.FK__Zaniatiya__Zania__5165187F" FromRole="Zaniatiya1" ToRole="ZaniatiyaClients1" />
+  </EntityType>
+  <EntityType Name="ZaniatiyaClients1">
+    <Key>
+      <PropertyRef Name="ID_ZaniatiyaClients" />
+    </Key>
+    <Property Name="ID_ZaniatiyaClients" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Zaniatiya_ID" Type="Int32" Nullable="false" />
+    <Property Name="Client_ID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Clients" Relationship="ProFormModel.FK__Zaniatiya__Clien__52593CB8" FromRole="ZaniatiyaClients1" ToRole="Clients1" />
+    <NavigationProperty Name="Zaniatiya" Relationship="ProFormModel.FK__Zaniatiya__Zania__5165187F" FromRole="ZaniatiyaClients1" ToRole="Zaniatiya1" />
+  </EntityType>
+  <Association Name="FK__Abonement__SrokA__4222D4EF1">
+    <End Type="ProFormModel.SrokiAbonements" Role="SrokiAbonements" Multiplicity="1" />
+    <End Type="ProFormModel.Abonements1" Role="Abonements1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SrokiAbonements">
+        <PropertyRef Name="ID_SrokAbonementa" />
+      </Principal>
+      <Dependent Role="Abonements1">
+        <PropertyRef Name="SrokAbonementa_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Abonement__TypeD__412EB0B6">
+    <End Type="ProFormModel.TypeDeystviyas1" Role="TypeDeystviyas1" Multiplicity="1" />
+    <End Type="ProFormModel.Abonements1" Role="Abonements1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TypeDeystviyas1">
+        <PropertyRef Name="ID_TypeDeystviya" />
+      </Principal>
+      <Dependent Role="Abonements1">
+        <PropertyRef Name="TypeDeystviya_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Clients__Aboneme__45F365D3">
+    <End Type="ProFormModel.Abonements1" Role="Abonements1" Multiplicity="1" />
+    <End Type="ProFormModel.Clients1" Role="Clients1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Abonements1">
+        <PropertyRef Name="ID_Abonement" />
+      </Principal>
+      <Dependent Role="Clients1">
+        <PropertyRef Name="Abonement_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Oplati__Client_I__5535A963">
+    <End Type="ProFormModel.Clients1" Role="Clients1" Multiplicity="1" />
+    <End Type="ProFormModel.Oplati1" Role="Oplati1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clients1">
+        <PropertyRef Name="ID_Client" />
+      </Principal>
+      <Dependent Role="Oplati1">
+        <PropertyRef Name="Client_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Zaniatiya__Clien__52593CB8">
+    <End Type="ProFormModel.Clients1" Role="Clients1" Multiplicity="1" />
+    <End Type="ProFormModel.ZaniatiyaClients1" Role="ZaniatiyaClients1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clients1">
+        <PropertyRef Name="ID_Client" />
+      </Principal>
+      <Dependent Role="ZaniatiyaClients1">
+        <PropertyRef Name="Client_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Treners__TrenerT__4BAC3F29">
+    <End Type="ProFormModel.TrenerTypes1" Role="TrenerTypes1" Multiplicity="1" />
+    <End Type="ProFormModel.Treners1" Role="Treners1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TrenerTypes1">
+        <PropertyRef Name="ID_TrenerTypes" />
+      </Principal>
+      <Dependent Role="Treners1">
+        <PropertyRef Name="TrenerTypes_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Zaniatiya__Trene__4E88ABD4">
+    <End Type="ProFormModel.Treners1" Role="Treners1" Multiplicity="1" />
+    <End Type="ProFormModel.Zaniatiya1" Role="Zaniatiya1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Treners1">
+        <PropertyRef Name="ID_Trener" />
+      </Principal>
+      <Dependent Role="Zaniatiya1">
+        <PropertyRef Name="Trener_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Zaniatiya__Zania__5165187F">
+    <End Type="ProFormModel.Zaniatiya1" Role="Zaniatiya1" Multiplicity="1" />
+    <End Type="ProFormModel.ZaniatiyaClients1" Role="ZaniatiyaClients1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Zaniatiya1">
+        <PropertyRef Name="ID_Zaniatiya" />
+      </Principal>
+      <Dependent Role="ZaniatiyaClients1">
+        <PropertyRef Name="Zaniatiya_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

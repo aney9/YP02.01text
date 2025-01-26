@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище ProFormModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Abonements">
+    <Key>
+      <PropertyRef Name="ID_Abonement" />
+    </Key>
+    <Property Name="ID_Abonement" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Cost" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="ColvoPosesheniy" Type="int" Nullable="false" />
+    <Property Name="TypeDeystviya_ID" Type="int" Nullable="false" />
+    <Property Name="SrokAbonementa_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Clients">
+    <Key>
+      <PropertyRef Name="ID_Client" />
+    </Key>
+    <Property Name="ID_Client" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ClientName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ClientSurname" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ClientMiddlename" Type="varchar" MaxLength="50" />
+    <Property Name="PhoneNumber" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="DatePokupki" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="DateOkonchaniya" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Abonement_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Oplati">
+    <Key>
+      <PropertyRef Name="ID_Oplati" />
+    </Key>
+    <Property Name="ID_Oplati" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DateOplati" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="CodeOplati" Type="int" Nullable="false" />
+    <Property Name="Skidka" Type="bit" Nullable="false" />
+    <Property Name="Summa" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="Client_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RoleSotrudnikas">
+    <Key>
+      <PropertyRef Name="ID_RoleSotrudnik" />
+    </Key>
+    <Property Name="ID_RoleSotrudnik" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RoleSotrudnik" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sotrudniki">
+    <Key>
+      <PropertyRef Name="ID_Sotrudnik" />
+    </Key>
+    <Property Name="ID_Sotrudnik" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SotrudnikName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SotrudnikSurname" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SotrudnikMiddleName" Type="varchar" MaxLength="50" />
+    <Property Name="Loginn" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Passwordd" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="RoleSotrudnik_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SrokiAbonements">
+    <Key>
+      <PropertyRef Name="ID_SrokAbonementa" />
+    </Key>
+    <Property Name="ID_SrokAbonementa" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SrokAbonementa" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Treners">
+    <Key>
+      <PropertyRef Name="ID_Trener" />
+    </Key>
+    <Property Name="ID_Trener" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TrenerName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TrenerSurname" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TrenerMiddleName" Type="varchar" MaxLength="50" />
+    <Property Name="Passwordd" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TrenerTypes_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TrenerTypes">
+    <Key>
+      <PropertyRef Name="ID_TrenerTypes" />
+    </Key>
+    <Property Name="ID_TrenerTypes" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TrenerType" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TypeDeystviyas">
+    <Key>
+      <PropertyRef Name="ID_TypeDeystviya" />
+    </Key>
+    <Property Name="ID_TypeDeystviya" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TypeDeystviya" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Zaniatiya">
+    <Key>
+      <PropertyRef Name="ID_Zaniatiya" />
+    </Key>
+    <Property Name="ID_Zaniatiya" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NameZaniatiya" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DateZaniatiya" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="ColvoHours" Type="int" Nullable="false" />
+    <Property Name="ColvoUchastnikov" Type="int" Nullable="false" />
+    <Property Name="Trener_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ZaniatiyaClients">
+    <Key>
+      <PropertyRef Name="ID_ZaniatiyaClients" />
+    </Key>
+    <Property Name="ID_ZaniatiyaClients" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Zaniatiya_ID" Type="int" Nullable="false" />
+    <Property Name="Client_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Abonement__SrokA__4222D4EF">
+    <End Role="SrokiAbonements" Type="Self.SrokiAbonements" Multiplicity="1" />
+    <End Role="Abonements" Type="Self.Abonements" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SrokiAbonements">
+        <PropertyRef Name="ID_SrokAbonementa" />
+      </Principal>
+      <Dependent Role="Abonements">
+        <PropertyRef Name="SrokAbonementa_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Abonement__TypeD__412EB0B6">
+    <End Role="TypeDeystviyas" Type="Self.TypeDeystviyas" Multiplicity="1" />
+    <End Role="Abonements" Type="Self.Abonements" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TypeDeystviyas">
+        <PropertyRef Name="ID_TypeDeystviya" />
+      </Principal>
+      <Dependent Role="Abonements">
+        <PropertyRef Name="TypeDeystviya_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Clients__Aboneme__45F365D3">
+    <End Role="Abonements" Type="Self.Abonements" Multiplicity="1" />
+    <End Role="Clients" Type="Self.Clients" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Abonements">
+        <PropertyRef Name="ID_Abonement" />
+      </Principal>
+      <Dependent Role="Clients">
+        <PropertyRef Name="Abonement_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Oplati__Client_I__5535A963">
+    <End Role="Clients" Type="Self.Clients" Multiplicity="1" />
+    <End Role="Oplati" Type="Self.Oplati" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clients">
+        <PropertyRef Name="ID_Client" />
+      </Principal>
+      <Dependent Role="Oplati">
+        <PropertyRef Name="Client_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Sotrudnik__RoleS__3A81B327">
+    <End Role="RoleSotrudnikas" Type="Self.RoleSotrudnikas" Multiplicity="1" />
+    <End Role="Sotrudniki" Type="Self.Sotrudniki" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RoleSotrudnikas">
+        <PropertyRef Name="ID_RoleSotrudnik" />
+      </Principal>
+      <Dependent Role="Sotrudniki">
+        <PropertyRef Name="RoleSotrudnik_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Treners__TrenerT__4BAC3F29">
+    <End Role="TrenerTypes" Type="Self.TrenerTypes" Multiplicity="1" />
+    <End Role="Treners" Type="Self.Treners" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TrenerTypes">
+        <PropertyRef Name="ID_TrenerTypes" />
+      </Principal>
+      <Dependent Role="Treners">
+        <PropertyRef Name="TrenerTypes_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Zaniatiya__Clien__52593CB8">
+    <End Role="Clients" Type="Self.Clients" Multiplicity="1" />
+    <End Role="ZaniatiyaClients" Type="Self.ZaniatiyaClients" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clients">
+        <PropertyRef Name="ID_Client" />
+      </Principal>
+      <Dependent Role="ZaniatiyaClients">
+        <PropertyRef Name="Client_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Zaniatiya__Trene__4E88ABD4">
+    <End Role="Treners" Type="Self.Treners" Multiplicity="1" />
+    <End Role="Zaniatiya" Type="Self.Zaniatiya" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Treners">
+        <PropertyRef Name="ID_Trener" />
+      </Principal>
+      <Dependent Role="Zaniatiya">
+        <PropertyRef Name="Trener_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Zaniatiya__Zania__5165187F">
+    <End Role="Zaniatiya" Type="Self.Zaniatiya" Multiplicity="1" />
+    <End Role="ZaniatiyaClients" Type="Self.ZaniatiyaClients" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Zaniatiya">
+        <PropertyRef Name="ID_Zaniatiya" />
+      </Principal>
+      <Dependent Role="ZaniatiyaClients">
+        <PropertyRef Name="Zaniatiya_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище ProFormModelContainer">
+    <EntitySet Name="Abonements" EntityType="Self.Abonements" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Clients" EntityType="Self.Clients" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Oplati" EntityType="Self.Oplati" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RoleSotrudnikas" EntityType="Self.RoleSotrudnikas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sotrudniki" EntityType="Self.Sotrudniki" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SrokiAbonements" EntityType="Self.SrokiAbonements" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Treners" EntityType="Self.Treners" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TrenerTypes" EntityType="Self.TrenerTypes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TypeDeystviyas" EntityType="Self.TypeDeystviyas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Zaniatiya" EntityType="Self.Zaniatiya" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ZaniatiyaClients" EntityType="Self.ZaniatiyaClients" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Abonement__SrokA__4222D4EF" Association="Self.FK__Abonement__SrokA__4222D4EF">
+      <End Role="SrokiAbonements" EntitySet="SrokiAbonements" />
+      <End Role="Abonements" EntitySet="Abonements" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Abonement__TypeD__412EB0B6" Association="Self.FK__Abonement__TypeD__412EB0B6">
+      <End Role="TypeDeystviyas" EntitySet="TypeDeystviyas" />
+      <End Role="Abonements" EntitySet="Abonements" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Clients__Aboneme__45F365D3" Association="Self.FK__Clients__Aboneme__45F365D3">
+      <End Role="Abonements" EntitySet="Abonements" />
+      <End Role="Clients" EntitySet="Clients" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Oplati__Client_I__5535A963" Association="Self.FK__Oplati__Client_I__5535A963">
+      <End Role="Clients" EntitySet="Clients" />
+      <End Role="Oplati" EntitySet="Oplati" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Sotrudnik__RoleS__3A81B327" Association="Self.FK__Sotrudnik__RoleS__3A81B327">
+      <End Role="RoleSotrudnikas" EntitySet="RoleSotrudnikas" />
+      <End Role="Sotrudniki" EntitySet="Sotrudniki" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Treners__TrenerT__4BAC3F29" Association="Self.FK__Treners__TrenerT__4BAC3F29">
+      <End Role="TrenerTypes" EntitySet="TrenerTypes" />
+      <End Role="Treners" EntitySet="Treners" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Zaniatiya__Clien__52593CB8" Association="Self.FK__Zaniatiya__Clien__52593CB8">
+      <End Role="Clients" EntitySet="Clients" />
+      <End Role="ZaniatiyaClients" EntitySet="ZaniatiyaClients" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Zaniatiya__Trene__4E88ABD4" Association="Self.FK__Zaniatiya__Trene__4E88ABD4">
+      <End Role="Treners" EntitySet="Treners" />
+      <End Role="Zaniatiya" EntitySet="Zaniatiya" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Zaniatiya__Zania__5165187F" Association="Self.FK__Zaniatiya__Zania__5165187F">
+      <End Role="Zaniatiya" EntitySet="Zaniatiya" />
+      <End Role="ZaniatiyaClients" EntitySet="ZaniatiyaClients" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

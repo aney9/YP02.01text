@@ -1,0 +1,160 @@
+﻿<Window x:Class="YP02._01Proga.MainWindowAdmin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:YP02._01Proga"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="MainWindowAdmin" Height="905" Width="1400"
+        Background="#000000"
+        WindowStartupLocation="CenterScreen"
+        >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.03*"/>
+            <ColumnDefinition Width="0.7*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0.4*"/>
+            <ColumnDefinition Width="0.3*"/>
+            <ColumnDefinition Width="0.03*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="0.3*"/>
+            <RowDefinition/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition/>
+            <RowDefinition Height="0.4*"/>
+        </Grid.RowDefinitions>
+
+
+
+        <Border Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="6">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                    <GradientStop Color="#FC4000" Offset="0" />
+                    <GradientStop Color="#7F0DEB" Offset="1" />
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+
+        <TextBlock Text="Здравствуйте - Админ" Grid.Column="1" Grid.Row="0" Foreground="White" VerticalAlignment="Center" FontSize="24" FontFamily="Arial"/>
+
+        <Button Grid.Column="4" Background="#232323" VerticalAlignment="Center" HorizontalAlignment="Right" BorderThickness="0" Width="85" Height="45" Click="exit_click">
+            <Button.Clip>
+                <RectangleGeometry RadiusX="15" RadiusY="15" Rect="0,0,85,45" />
+            </Button.Clip>
+            <materialDesign:PackIcon Kind="ArrowRight" Foreground="White"/>
+        </Button>
+
+
+        <Border Grid.Column="2" Grid.Row="2" CornerRadius="25">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                    <GradientStop Color="#FC4000" Offset="0" />
+                    <GradientStop Color="#7F0DEB" Offset="1" />
+                </LinearGradientBrush>
+            </Border.Background>
+            <Button Content="Клиенты" Foreground="White" Background="Transparent" BorderThickness="0" FontSize="24" FontFamily="Arial" Click="Button_Click"/>
+        </Border>
+
+
+        <Border Grid.Column="2" Grid.Row="4" CornerRadius="25">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                    <GradientStop Color="#FC4000" Offset="0" />
+                    <GradientStop Color="#7F0DEB" Offset="1" />
+                </LinearGradientBrush>
+            </Border.Background>
+            <Button Content="Тренеры" Foreground="White" Background="Transparent" BorderThickness="0" FontSize="24" FontFamily="Arial" Click="trener_click"/>
+        </Border>
+
+
+        <Border Grid.Column="2" Grid.Row="6" CornerRadius="25">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                    <GradientStop Color="#FC4000" Offset="0" />
+                    <GradientStop Color="#7F0DEB" Offset="1" />
+                </LinearGradientBrush>
+            </Border.Background>
+            <Button Content="Абонементы" Foreground="White" Background="Transparent" BorderThickness="0" FontSize="24" FontFamily="Arial" Click="Abonements"/>
+        </Border>
+
+        <Border Grid.Column="2" Grid.Row="8" CornerRadius="25">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                    <GradientStop Color="#FC4000" Offset="0" />
+                    <GradientStop Color="#7F0DEB" Offset="1" />
+                </LinearGradientBrush>
+            </Border.Background>
+            <Button Content="Занятия" Foreground="White" Background="Transparent" BorderThickness="0" FontSize="24" FontFamily="Arial" Click="zaniatiya_click"/>
+        </Border>
+
+        <Border Grid.Column="2" Grid.Row="10" CornerRadius="25">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                    <GradientStop Color="#FC4000" Offset="0" />
+                    <GradientStop Color="#7F0DEB" Offset="1" />
+                </LinearGradientBrush>
+            </Border.Background>
+            <Button Content="Оплаты" Foreground="White" Background="Transparent" BorderThickness="0" FontSize="24" FontFamily="Arial" Click="oplati_click"/>
+        </Border>
+
+        <Border Grid.Column="2" Grid.Row="12" CornerRadius="25">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                    <GradientStop Color="#FC4000" Offset="0" />
+                    <GradientStop Color="#7F0DEB" Offset="1" />
+                </LinearGradientBrush>
+            </Border.Background>
+            <Button Content="Группы" Foreground="White" Background="Transparent" BorderThickness="0" FontSize="24" FontFamily="Arial" Click="groups_click"/>
+        </Border>
+
+        <Border Grid.Column="2" Grid.Row="14" CornerRadius="25">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                    <GradientStop Color="#FC4000" Offset="0" />
+                    <GradientStop Color="#7F0DEB" Offset="1" />
+                </LinearGradientBrush>
+            </Border.Background>
+            <Button Content="Тип тренера" Foreground="White" Background="Transparent" BorderThickness="0" FontSize="24" FontFamily="Arial" Click="tiptrenera_click"/>
+        </Border>
+
+        <Border Grid.Column="2" Grid.Row="16" CornerRadius="25">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                    <GradientStop Color="#FC4000" Offset="0" />
+                    <GradientStop Color="#7F0DEB" Offset="1" />
+                </LinearGradientBrush>
+            </Border.Background>
+            <Button Content="Сроки абонемента" Foreground="White" Background="Transparent" BorderThickness="0" FontSize="24" FontFamily="Arial" Click="sroki_click"/>
+        </Border>
+
+        <Border Grid.Column="2" Grid.Row="18" CornerRadius="25">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                    <GradientStop Color="#FC4000" Offset="0" />
+                    <GradientStop Color="#7F0DEB" Offset="1" />
+                </LinearGradientBrush>
+            </Border.Background>
+            <Button Content="Область действия абонемента" Foreground="White" Background="Transparent" BorderThickness="0" FontSize="24" FontFamily="Arial" Click="oblast_click"/>
+        </Border>
+
+
+    </Grid>
+</Window>

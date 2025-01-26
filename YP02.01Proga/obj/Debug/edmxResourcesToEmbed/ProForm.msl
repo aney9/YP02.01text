@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище ProFormModelContainer" CdmEntityContainer="ProFormEntities">
+    <EntitySetMapping Name="RoleSotrudnikas">
+      <EntityTypeMapping TypeName="ProFormModel.RoleSotrudnikas">
+        <MappingFragment StoreEntitySet="RoleSotrudnikas">
+          <ScalarProperty Name="ID_RoleSotrudnik" ColumnName="ID_RoleSotrudnik" />
+          <ScalarProperty Name="RoleSotrudnik" ColumnName="RoleSotrudnik" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sotrudniki">
+      <EntityTypeMapping TypeName="ProFormModel.Sotrudniki">
+        <MappingFragment StoreEntitySet="Sotrudniki">
+          <ScalarProperty Name="ID_Sotrudnik" ColumnName="ID_Sotrudnik" />
+          <ScalarProperty Name="SotrudnikName" ColumnName="SotrudnikName" />
+          <ScalarProperty Name="SotrudnikSurname" ColumnName="SotrudnikSurname" />
+          <ScalarProperty Name="SotrudnikMiddleName" ColumnName="SotrudnikMiddleName" />
+          <ScalarProperty Name="Loginn" ColumnName="Loginn" />
+          <ScalarProperty Name="Passwordd" ColumnName="Passwordd" />
+          <ScalarProperty Name="RoleSotrudnik_ID" ColumnName="RoleSotrudnik_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SrokiAbonements">
+      <EntityTypeMapping TypeName="ProFormModel.SrokiAbonements">
+        <MappingFragment StoreEntitySet="SrokiAbonements">
+          <ScalarProperty Name="ID_SrokAbonementa" ColumnName="ID_SrokAbonementa" />
+          <ScalarProperty Name="SrokAbonementa" ColumnName="SrokAbonementa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Abonements1Set">
+      <EntityTypeMapping TypeName="ProFormModel.Abonements1">
+        <MappingFragment StoreEntitySet="Abonements">
+          <ScalarProperty Name="SrokAbonementa_ID" ColumnName="SrokAbonementa_ID" />
+          <ScalarProperty Name="TypeDeystviya_ID" ColumnName="TypeDeystviya_ID" />
+          <ScalarProperty Name="ColvoPosesheniy" ColumnName="ColvoPosesheniy" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="ID_Abonement" ColumnName="ID_Abonement" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clients1Set">
+      <EntityTypeMapping TypeName="ProFormModel.Clients1">
+        <MappingFragment StoreEntitySet="Clients">
+          <ScalarProperty Name="Abonement_ID" ColumnName="Abonement_ID" />
+          <ScalarProperty Name="DateOkonchaniya" ColumnName="DateOkonchaniya" />
+          <ScalarProperty Name="DatePokupki" ColumnName="DatePokupki" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="ClientMiddlename" ColumnName="ClientMiddlename" />
+          <ScalarProperty Name="ClientSurname" ColumnName="ClientSurname" />
+          <ScalarProperty Name="ClientName" ColumnName="ClientName" />
+          <ScalarProperty Name="ID_Client" ColumnName="ID_Client" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Oplati1Set">
+      <EntityTypeMapping TypeName="ProFormModel.Oplati1">
+        <MappingFragment StoreEntitySet="Oplati">
+          <ScalarProperty Name="Client_ID" ColumnName="Client_ID" />
+          <ScalarProperty Name="Summa" ColumnName="Summa" />
+          <ScalarProperty Name="Skidka" ColumnName="Skidka" />
+          <ScalarProperty Name="CodeOplati" ColumnName="CodeOplati" />
+          <ScalarProperty Name="DateOplati" ColumnName="DateOplati" />
+          <ScalarProperty Name="ID_Oplati" ColumnName="ID_Oplati" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Treners1Set">
+      <EntityTypeMapping TypeName="ProFormModel.Treners1">
+        <MappingFragment StoreEntitySet="Treners">
+          <ScalarProperty Name="TrenerTypes_ID" ColumnName="TrenerTypes_ID" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Passwordd" ColumnName="Passwordd" />
+          <ScalarProperty Name="TrenerMiddleName" ColumnName="TrenerMiddleName" />
+          <ScalarProperty Name="TrenerSurname" ColumnName="TrenerSurname" />
+          <ScalarProperty Name="TrenerName" ColumnName="TrenerName" />
+          <ScalarProperty Name="ID_Trener" ColumnName="ID_Trener" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrenerTypes1Set">
+      <EntityTypeMapping TypeName="ProFormModel.TrenerTypes1">
+        <MappingFragment StoreEntitySet="TrenerTypes">
+          <ScalarProperty Name="TrenerType" ColumnName="TrenerType" />
+          <ScalarProperty Name="ID_TrenerTypes" ColumnName="ID_TrenerTypes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeDeystviyas1Set">
+      <EntityTypeMapping TypeName="ProFormModel.TypeDeystviyas1">
+        <MappingFragment StoreEntitySet="TypeDeystviyas">
+          <ScalarProperty Name="TypeDeystviya" ColumnName="TypeDeystviya" />
+          <ScalarProperty Name="ID_TypeDeystviya" ColumnName="ID_TypeDeystviya" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Zaniatiya1Set">
+      <EntityTypeMapping TypeName="ProFormModel.Zaniatiya1">
+        <MappingFragment StoreEntitySet="Zaniatiya">
+          <ScalarProperty Name="Trener_ID" ColumnName="Trener_ID" />
+          <ScalarProperty Name="ColvoUchastnikov" ColumnName="ColvoUchastnikov" />
+          <ScalarProperty Name="ColvoHours" ColumnName="ColvoHours" />
+          <ScalarProperty Name="DateZaniatiya" ColumnName="DateZaniatiya" />
+          <ScalarProperty Name="NameZaniatiya" ColumnName="NameZaniatiya" />
+          <ScalarProperty Name="ID_Zaniatiya" ColumnName="ID_Zaniatiya" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ZaniatiyaClients1Set">
+      <EntityTypeMapping TypeName="ProFormModel.ZaniatiyaClients1">
+        <MappingFragment StoreEntitySet="ZaniatiyaClients">
+          <ScalarProperty Name="Client_ID" ColumnName="Client_ID" />
+          <ScalarProperty Name="Zaniatiya_ID" ColumnName="Zaniatiya_ID" />
+          <ScalarProperty Name="ID_ZaniatiyaClients" ColumnName="ID_ZaniatiyaClients" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

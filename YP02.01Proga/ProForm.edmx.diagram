@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="45f68492fe32468c89d3179be8cb6271" Name="Diagram1" ZoomLevel="85">
+        <EntityTypeShape EntityType="ProFormModel.RoleSotrudnikas" Width="1.5" PointX="7.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProFormModel.Sotrudniki" Width="1.5" PointX="10" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProFormModel.SrokiAbonements" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <AssociationConnector Association="ProFormModel.FK__Sotrudnik__RoleS__5DCAEF64" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="ProFormModel.Abonements1" Width="1.5" PointX="7" PointY="10" />
+        <EntityTypeShape EntityType="ProFormModel.Clients1" Width="1.5" PointX="5.25" PointY="12.875" />
+        <EntityTypeShape EntityType="ProFormModel.Oplati1" Width="1.5" PointX="7.5" PointY="13.25" />
+        <EntityTypeShape EntityType="ProFormModel.Treners1" Width="1.5" PointX="3" PointY="17.125" />
+        <EntityTypeShape EntityType="ProFormModel.TrenerTypes1" Width="1.5" PointX="0.75" PointY="17.625" />
+        <EntityTypeShape EntityType="ProFormModel.TypeDeystviyas1" Width="1.5" PointX="0.75" PointY="12.375" />
+        <EntityTypeShape EntityType="ProFormModel.Zaniatiya1" Width="1.5" PointX="5.25" PointY="17.25" />
+        <EntityTypeShape EntityType="ProFormModel.ZaniatiyaClients1" Width="1.5" PointX="7.5" PointY="16.5" />
+        <AssociationConnector Association="ProFormModel.FK__Abonement__SrokA__4222D4EF1" />
+        <AssociationConnector Association="ProFormModel.FK__Abonement__TypeD__412EB0B6" />
+        <AssociationConnector Association="ProFormModel.FK__Clients__Aboneme__45F365D3" />
+        <AssociationConnector Association="ProFormModel.FK__Oplati__Client_I__5535A963" />
+        <AssociationConnector Association="ProFormModel.FK__Zaniatiya__Clien__52593CB8" />
+        <AssociationConnector Association="ProFormModel.FK__Treners__TrenerT__4BAC3F29" />
+        <AssociationConnector Association="ProFormModel.FK__Zaniatiya__Trene__4E88ABD4" />
+        <AssociationConnector Association="ProFormModel.FK__Zaniatiya__Zania__5165187F" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
