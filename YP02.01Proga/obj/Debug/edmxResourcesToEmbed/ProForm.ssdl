@@ -30,7 +30,6 @@
     <Property Name="ID_Oplati" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="DateOplati" Type="varchar" MaxLength="10" Nullable="false" />
     <Property Name="CodeOplati" Type="int" Nullable="false" />
-    <Property Name="Skidka" Type="bit" Nullable="false" />
     <Property Name="Summa" Type="decimal" Precision="10" Scale="2" Nullable="false" />
     <Property Name="Client_ID" Type="int" Nullable="false" />
   </EntityType>

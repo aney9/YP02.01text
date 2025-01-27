@@ -35,7 +35,6 @@
           <Property Name="ID_Oplati" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="DateOplati" Type="varchar" MaxLength="10" Nullable="false" />
           <Property Name="CodeOplati" Type="int" Nullable="false" />
-          <Property Name="Skidka" Type="bit" Nullable="false" />
           <Property Name="Summa" Type="decimal" Precision="10" Scale="2" Nullable="false" />
           <Property Name="Client_ID" Type="int" Nullable="false" />
         </EntityType>
@@ -397,7 +396,6 @@
           <Property Name="ID_Oplati" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="DateOplati" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
           <Property Name="CodeOplati" Type="Int32" Nullable="false" />
-          <Property Name="Skidka" Type="Boolean" Nullable="false" />
           <Property Name="Summa" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
           <Property Name="Client_ID" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Clients" Relationship="ProFormModel.FK__Oplati__Client_I__5535A963" FromRole="Oplati1" ToRole="Clients1" />
@@ -616,7 +614,6 @@
               <MappingFragment StoreEntitySet="Oplati">
                 <ScalarProperty Name="Client_ID" ColumnName="Client_ID" />
                 <ScalarProperty Name="Summa" ColumnName="Summa" />
-                <ScalarProperty Name="Skidka" ColumnName="Skidka" />
                 <ScalarProperty Name="CodeOplati" ColumnName="CodeOplati" />
                 <ScalarProperty Name="DateOplati" ColumnName="DateOplati" />
                 <ScalarProperty Name="ID_Oplati" ColumnName="ID_Oplati" />

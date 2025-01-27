@@ -3,24 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|c:\\users\\timof\\source\\repos\\yp02.01proga\\yp02.01proga\\windowzaniyatia.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\windowzaniyatia.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|c:\\users\\timof\\source\\repos\\yp02.01proga\\yp02.01proga\\windowauthorization.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\windowauthorization.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|c:\\users\\timof\\source\\repos\\yp02.01proga\\yp02.01proga\\windowauthorization.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\windowauthorization.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|c:\\users\\timof\\source\\repos\\yp02.01proga\\yp02.01proga\\windowabonements.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\windowabonements.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|c:\\users\\timof\\source\\repos\\yp02.01proga\\yp02.01proga\\windowzaniyatia.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\windowzaniyatia.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|c:\\users\\timof\\source\\repos\\yp02.01proga\\yp02.01proga\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|c:\\users\\timof\\source\\repos\\yp02.01proga\\yp02.01proga\\windowtrener.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\windowtrener.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|c:\\users\\timof\\source\\repos\\yp02.01proga\\yp02.01proga\\windowoplati.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\windowoplati.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|c:\\users\\timof\\source\\repos\\yp02.01proga\\yp02.01proga\\windowtrener.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\windowtrener.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|c:\\users\\timof\\source\\repos\\yp02.01proga\\yp02.01proga\\clientswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\clientswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|c:\\users\\timof\\source\\repos\\yp02.01proga\\yp02.01proga\\windowoplati.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\windowoplati.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|c:\\users\\timof\\source\\repos\\yp02.01proga\\yp02.01proga\\clientswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\clientswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|c:\\users\\timof\\source\\repos\\yp02.01proga\\yp02.01proga\\windowzaniyatia.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\windowzaniyatia.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,64 +51,115 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "WindowZaniyatia.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowZaniyatia.xaml.cs",
-              "RelativeDocumentMoniker": "YP02.01Proga\\WindowZaniyatia.xaml.cs",
-              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowZaniyatia.xaml.cs",
-              "RelativeToolTip": "YP02.01Proga\\WindowZaniyatia.xaml.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAswEYAAAA+AAAAAAAAAA==",
+              "Title": "WindowAuthorization.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowAuthorization.xaml.cs",
+              "RelativeDocumentMoniker": "YP02.01Proga\\WindowAuthorization.xaml.cs",
+              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowAuthorization.xaml.cs",
+              "RelativeToolTip": "YP02.01Proga\\WindowAuthorization.xaml.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAowEsAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-27T04:29:09.339Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "WindowAbonements.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowAbonements.xaml.cs",
-              "RelativeDocumentMoniker": "YP02.01Proga\\WindowAbonements.xaml.cs",
-              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowAbonements.xaml.cs",
-              "RelativeToolTip": "YP02.01Proga\\WindowAbonements.xaml.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAowJcAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-27T03:13:31.202Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "WindowZaniyatia.xaml",
-              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowZaniyatia.xaml",
-              "RelativeDocumentMoniker": "YP02.01Proga\\WindowZaniyatia.xaml",
-              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowZaniyatia.xaml",
-              "RelativeToolTip": "YP02.01Proga\\WindowZaniyatia.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-27T04:18:59.914Z",
+              "WhenOpened": "2025-01-27T23:52:00.148Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "WindowTrener.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowTrener.xaml.cs",
-              "RelativeDocumentMoniker": "YP02.01Proga\\WindowTrener.xaml.cs",
-              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowTrener.xaml.cs",
-              "RelativeToolTip": "YP02.01Proga\\WindowTrener.xaml.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAA5wC4AAAANAAAAAAAAAA==",
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "YP02.01Proga\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\MainWindow.xaml.cs",
+              "RelativeToolTip": "YP02.01Proga\\MainWindow.xaml.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAA9wE0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-27T02:52:35.959Z",
+              "WhenOpened": "2025-01-27T23:51:44.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WindowAuthorization.xaml",
+              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowAuthorization.xaml",
+              "RelativeDocumentMoniker": "YP02.01Proga\\WindowAuthorization.xaml",
+              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowAuthorization.xaml",
+              "RelativeToolTip": "YP02.01Proga\\WindowAuthorization.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-27T23:51:16.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WindowAbonements.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowAbonements.xaml.cs",
+              "RelativeDocumentMoniker": "YP02.01Proga\\WindowAbonements.xaml.cs",
+              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowAbonements.xaml.cs",
+              "RelativeToolTip": "YP02.01Proga\\WindowAbonements.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T23:32:32.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "WindowZaniyatia.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowZaniyatia.xaml.cs",
+              "RelativeDocumentMoniker": "YP02.01Proga\\WindowZaniyatia.xaml.cs",
+              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowZaniyatia.xaml.cs",
+              "RelativeToolTip": "YP02.01Proga\\WindowZaniyatia.xaml.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T23:32:00.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ClientsWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\ClientsWindow.xaml",
+              "RelativeDocumentMoniker": "YP02.01Proga\\ClientsWindow.xaml",
+              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\ClientsWindow.xaml",
+              "RelativeToolTip": "YP02.01Proga\\ClientsWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-27T23:23:37.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ClientsWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\ClientsWindow.xaml.cs",
+              "RelativeDocumentMoniker": "YP02.01Proga\\ClientsWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\ClientsWindow.xaml.cs",
+              "RelativeToolTip": "YP02.01Proga\\ClientsWindow.xaml.cs",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAAwJsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T23:23:34.757Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "WindowTrener.xaml",
-              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowTrener.xaml",
-              "RelativeDocumentMoniker": "YP02.01Proga\\WindowTrener.xaml",
-              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowTrener.xaml",
-              "RelativeToolTip": "YP02.01Proga\\WindowTrener.xaml",
+              "Title": "WindowOplati.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowOplati.xaml.cs",
+              "RelativeDocumentMoniker": "YP02.01Proga\\WindowOplati.xaml.cs",
+              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowOplati.xaml.cs",
+              "RelativeToolTip": "YP02.01Proga\\WindowOplati.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJcAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T22:29:51.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WindowOplati.xaml",
+              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowOplati.xaml",
+              "RelativeDocumentMoniker": "YP02.01Proga\\WindowOplati.xaml",
+              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowOplati.xaml",
+              "RelativeToolTip": "YP02.01Proga\\WindowOplati.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-27T02:37:28.75Z",
+              "WhenOpened": "2025-01-27T22:28:51.261Z",
               "EditorCaption": ""
             }
           ]

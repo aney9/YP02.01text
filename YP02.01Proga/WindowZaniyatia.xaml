@@ -100,9 +100,11 @@ GridLinesVisibility="All" HorizontalGridLinesBrush="Black" VerticalGridLinesBrus
                      PreviewTextInput="Proverka"/>
         </Border>
 
-        <Border Grid.Column="3" Grid.Row="4" CornerRadius="25" Background="#232323">
+        <Border Grid.Column="3" Grid.Row="4" Background="#232323">
             <DatePicker x:Name="data" Foreground="#898989" materialDesign:HintAssist.Hint="Дата занятия" FontSize="20" 
-                        FontFamily="Arial" Background="Transparent" BorderThickness="0" Padding="20,0,0,0"/>
+                        FontFamily="Arial" Background="Transparent" BorderThickness="0" Padding="0,0,0,0" IsTodayHighlighted="False"
+                        IsEnabled="False"
+                        />
         </Border>
 
         <Border Grid.Column="3" Grid.Row="6" CornerRadius="25" Background="#232323">

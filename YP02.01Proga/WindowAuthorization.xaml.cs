@@ -19,6 +19,7 @@ namespace YP02._01Proga
     /// </summary>
     public partial class WindowAuthorization : Window
     {
+        private ProFormEntities c = new ProFormEntities();
         public WindowAuthorization()
         {
             InitializeComponent();
@@ -36,6 +37,43 @@ namespace YP02._01Proga
             MainWindow m = new MainWindow();
             m.Show();
             this.Close();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            var vxod = c.Sotrudniki.ToList();
+            bool avtoriz = false;
+
+            if (string.IsNullOrWhiteSpace(login.Text) || string.IsNullOrWhiteSpace(pass.Text))
+            {
+                MessageBox.Show("Пожалуйста, заполните все поля.");
+                return;
+            }
+
+            foreach (var v in vxod)
+            {
+                if (v.Loginn == login.Text && v.Passwordd == pass.Text)
+                {
+                    avtoriz = true;
+
+                    if (v.RoleSotrudnik_ID == 1)
+                    {
+                        MainWindowAdmin m = new MainWindowAdmin();
+                        m.Show();
+                        this.Close();
+                    }
+
+                    Close();
+                    break;
+                }
+            }
+
+            if (!avtoriz)
+            {
+                MessageBox.Show("Такого логина/пароля не существует. Попробуйте еще раз.");
+                login.Text = null;
+                pass.Text = null;
+            }
         }
     }
 }

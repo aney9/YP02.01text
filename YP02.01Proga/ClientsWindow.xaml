@@ -134,12 +134,12 @@
 
         <Border Grid.Column="3" Grid.Row="12" CornerRadius="25" Background="#232323">
             <DatePicker x:Name="datakon" Foreground="White" materialDesign:HintAssist.Hint="Срок окончания абонемента" FontSize="20" 
-                        FontFamily="Arial" Background="Transparent" BorderThickness="0" Padding="20,0,0,0" IsEnabled="False"/>
+                        FontFamily="Arial" Background="Transparent" BorderThickness="0" Padding="20,0,0,0"/>
         </Border>
 
         <ComboBox x:Name="vybor"  Grid.Column="3" Grid.Row="14" FontSize="20" FontFamily="Arial" Foreground="White" 
                   Background="#232323" BorderBrush="Transparent" BorderThickness="0" Padding="20"
-                  materialDesign:HintAssist.Hint="Тариф Абонемента" SelectionChanged="vybor_SelectionChanged"/>
+                  materialDesign:HintAssist.Hint="Тариф Абонемента" />
 
         <Border Grid.Column="3" Grid.Row="16" CornerRadius="25">
             <Border.Background>

@@ -17,7 +17,6 @@ namespace YP02._01Proga
         public int ID_Oplati { get; set; }
         public string DateOplati { get; set; }
         public int CodeOplati { get; set; }
-        public bool Skidka { get; set; }
         public decimal Summa { get; set; }
         public int Client_ID { get; set; }
     

@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="45f68492fe32468c89d3179be8cb6271" Name="Diagram1" ZoomLevel="85">
+      <Diagram DiagramId="45f68492fe32468c89d3179be8cb6271" Name="Diagram1" ZoomLevel="88">
         <EntityTypeShape EntityType="ProFormModel.RoleSotrudnikas" Width="1.5" PointX="7.75" PointY="7.5" IsExpanded="true" />
         <EntityTypeShape EntityType="ProFormModel.Sotrudniki" Width="1.5" PointX="10" PointY="7.125" IsExpanded="true" />
         <EntityTypeShape EntityType="ProFormModel.SrokiAbonements" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />

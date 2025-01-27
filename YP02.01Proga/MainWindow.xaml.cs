@@ -20,6 +20,7 @@ namespace YP02._01Proga
     /// </summary>
     public partial class MainWindow : Window
     {
+        private ProFormEntities c = new ProFormEntities();
         public MainWindow()
         {
             InitializeComponent();
@@ -41,9 +42,39 @@ namespace YP02._01Proga
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            MainWindowAdmin adm = new MainWindowAdmin();
-            adm.Show();
-            this.Close();
+            var vxod = c.Sotrudniki.ToList();
+            bool avtoriz = false;
+
+            if (string.IsNullOrWhiteSpace(login.Text) || string.IsNullOrWhiteSpace(pass.Text))
+            {
+                MessageBox.Show("Пожалуйста, заполните все поля.");
+                return;
+            }
+
+            foreach (var v in vxod)
+            {
+                if (v.Loginn == login.Text && v.Passwordd == pass.Text)
+                {
+                    avtoriz = true;
+
+                    if (v.RoleSotrudnik_ID == 2)
+                    {
+                        Otchet o = new Otchet();
+                        o.Show();
+                        this.Close();
+                    }
+
+                    Close();
+                    break;
+                }
+            }
+
+            if (!avtoriz)
+            {
+                MessageBox.Show("Такого логина/пароля не существует. Попробуйте еще раз.");
+                login.Text = null;
+                pass.Text = null;
+            }
         }
     }
 }

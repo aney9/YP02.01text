@@ -53,3 +53,5 @@ C:\Users\timof\source\repos\YP02.01Proga\YP02.01Proga\bin\Debug\EntityFramework.
 C:\Users\timof\source\repos\YP02.01Proga\YP02.01Proga\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\timof\source\repos\YP02.01Proga\YP02.01Proga\bin\Debug\ru\EntityFramework.resources.dll
 C:\Users\timof\source\repos\YP02.01Proga\YP02.01Proga\obj\Debug\YP02.01Proga_Content.g.cs
+C:\Users\timof\source\repos\YP02.01Proga\YP02.01Proga\obj\Debug\Otchet.g.cs
+C:\Users\timof\source\repos\YP02.01Proga\YP02.01Proga\obj\Debug\Otchet.baml

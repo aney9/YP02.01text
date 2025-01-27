@@ -60,7 +60,6 @@
         <MappingFragment StoreEntitySet="Oplati">
           <ScalarProperty Name="Client_ID" ColumnName="Client_ID" />
           <ScalarProperty Name="Summa" ColumnName="Summa" />
-          <ScalarProperty Name="Skidka" ColumnName="Skidka" />
           <ScalarProperty Name="CodeOplati" ColumnName="CodeOplati" />
           <ScalarProperty Name="DateOplati" ColumnName="DateOplati" />
           <ScalarProperty Name="ID_Oplati" ColumnName="ID_Oplati" />

@@ -90,6 +90,9 @@
     <Compile Include="Oplati1.cs">
       <DependentUpon>ProForm.tt</DependentUpon>
     </Compile>
+    <Compile Include="Otchet.xaml.cs">
+      <DependentUpon>Otchet.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ProForm.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -176,6 +179,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="MainWindowAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Otchet.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

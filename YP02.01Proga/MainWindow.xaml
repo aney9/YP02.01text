@@ -44,11 +44,11 @@
     Grid.Row="1" 
     CornerRadius="25"
     Background="#232323">
-            <TextBox Foreground="#898989" materialDesign:HintAssist.Hint="Логин" FontSize="20" FontFamily="Arial" Background="Transparent" BorderThickness="0" Padding="20,0,0,0" Style="{StaticResource TextBoxNoUnderline}"/>
+            <TextBox x:Name="login" Foreground="#898989" materialDesign:HintAssist.Hint="Логин" FontSize="20" FontFamily="Arial" Background="Transparent" BorderThickness="0" Padding="20,0,0,0" Style="{StaticResource TextBoxNoUnderline}"/>
         </Border>
 
         <Border Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="3" CornerRadius="25" Background="#232323">
-            <TextBox Foreground="#898989" materialDesign:HintAssist.Hint="Пароль" FontSize="20" Background="Transparent" BorderThickness="0" Padding="20,0,0,0" Style="{StaticResource TextBoxNoUnderline}"/>
+            <TextBox x:Name="pass" Foreground="#898989" materialDesign:HintAssist.Hint="Пароль" FontSize="20" Background="Transparent" BorderThickness="0" Padding="20,0,0,0" Style="{StaticResource TextBoxNoUnderline}"/>
         </Border>
 
         <Border Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="3" CornerRadius="25">

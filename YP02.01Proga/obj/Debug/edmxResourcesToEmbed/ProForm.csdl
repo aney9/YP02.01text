@@ -126,7 +126,6 @@
     <Property Name="ID_Oplati" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="DateOplati" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
     <Property Name="CodeOplati" Type="Int32" Nullable="false" />
-    <Property Name="Skidka" Type="Boolean" Nullable="false" />
     <Property Name="Summa" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
     <Property Name="Client_ID" Type="Int32" Nullable="false" />
     <NavigationProperty Name="Clients" Relationship="ProFormModel.FK__Oplati__Client_I__5535A963" FromRole="Oplati1" ToRole="Clients1" />
