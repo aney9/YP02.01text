@@ -65,25 +65,60 @@
             <materialDesign:PackIcon Kind="ArrowRight" Foreground="White"/>
         </Button>
 
-        <DataGrid Grid.Column="0" Grid.RowSpan="23" Grid.ColumnSpan="2" Grid.Row="1" Background="#C4C4C4" Foreground="Black"/>
+        <DataGrid x:Name="dg" Grid.Column="0" Grid.RowSpan="23" Grid.ColumnSpan="2" Grid.Row="1" Background="#C4C4C4" Foreground="Black"
+IsReadOnly="True" AutoGenerateColumns="False" SelectionChanged="dg_select" 
+GridLinesVisibility="All" HorizontalGridLinesBrush="Black" VerticalGridLinesBrush="Black">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding NameZaniatiya}" Header="Название занятия"/>
+                <DataGridTextColumn Binding="{Binding DateZaniatiya}" Header="Дата занятия"/>
+                <DataGridTextColumn Binding="{Binding ColvoHours}" Header="Количество часов"/>
+                <DataGridTextColumn Binding="{Binding ColvoUchastnikov}" Header="Количество участников"/>
+                <DataGridTextColumn Binding="{Binding Treners.Email}" Header="Почта тренера"/>
+            </DataGrid.Columns>
+            <DataGrid.ColumnHeaderStyle>
+                <Style TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="Foreground" Value="Black" />
+                    <Setter Property="Background" Value="#C4C4C4" />
+                    <Setter Property="BorderBrush" Value="Black" />
+                    <Setter Property="BorderThickness" Value="0,0,1,1" />
+                    <Setter Property="Padding" Value="10,5,10,5" />
+                    <Setter Property="HorizontalContentAlignment" Value="Center" />
+                </Style>
+            </DataGrid.ColumnHeaderStyle>
+            <DataGrid.RowStyle>
+                <Style TargetType="{x:Type DataGridRow}">
+                    <Setter Property="BorderBrush" Value="Black" />
+                    <Setter Property="BorderThickness" Value="0,0,0,1" />
+                    <Setter Property="Background" Value="#C4C4C4"/>
+                </Style>
+            </DataGrid.RowStyle>
+        </DataGrid>
 
         <Border Grid.Column="3" Grid.Row="2" CornerRadius="25" Background="#232323">
-            <TextBox Foreground="#898989" materialDesign:HintAssist.Hint="Название занятия" FontSize="20" FontFamily="Arial" Background="Transparent" BorderThickness="0" Padding="20,0,0,0" Style="{StaticResource TextBoxNoUnderline}"/>
+            <TextBox x:Name="name" Foreground="#898989" materialDesign:HintAssist.Hint="Название занятия" FontSize="20" FontFamily="Arial" 
+                     Background="Transparent" BorderThickness="0" Padding="20,0,0,0" Style="{StaticResource TextBoxNoUnderline}"
+                     PreviewTextInput="Proverka"/>
         </Border>
 
         <Border Grid.Column="3" Grid.Row="4" CornerRadius="25" Background="#232323">
-            <TextBox Foreground="#898989" materialDesign:HintAssist.Hint="Дата и время занятия" FontSize="20" FontFamily="Arial" Background="Transparent" BorderThickness="0" Padding="20,0,0,0" Style="{StaticResource TextBoxNoUnderline}"/>
+            <DatePicker x:Name="data" Foreground="#898989" materialDesign:HintAssist.Hint="Дата занятия" FontSize="20" 
+                        FontFamily="Arial" Background="Transparent" BorderThickness="0" Padding="20,0,0,0"/>
         </Border>
 
         <Border Grid.Column="3" Grid.Row="6" CornerRadius="25" Background="#232323">
-            <TextBox Foreground="#898989" materialDesign:HintAssist.Hint="Количкство часов" FontSize="20" FontFamily="Arial" Background="Transparent" BorderThickness="0" Padding="20,0,0,0" Style="{StaticResource TextBoxNoUnderline}"/>
+            <TextBox x:Name="chas" Foreground="#898989" materialDesign:HintAssist.Hint="Количкство часов" FontSize="20" 
+                     FontFamily="Arial" Background="Transparent" BorderThickness="0" Padding="20,0,0,0" Style="{StaticResource TextBoxNoUnderline}"/>
         </Border>
 
         <Border Grid.Column="3" Grid.Row="8" CornerRadius="25" Background="#232323">
-            <TextBox Foreground="White" materialDesign:HintAssist.Hint="Количество участников" FontSize="20" FontFamily="Arial" Background="Transparent" BorderThickness="0" Padding="20,0,0,0" Style="{StaticResource TextBoxNoUnderline}"/>
+            <TextBox x:Name="uchast" Foreground="White" materialDesign:HintAssist.Hint="Количество участников" 
+                     FontSize="20" FontFamily="Arial" Background="Transparent" BorderThickness="0" 
+                     Padding="20,0,0,0" Style="{StaticResource TextBoxNoUnderline}"/>
         </Border>
 
-        <ComboBox Grid.Column="3" Grid.Row="10" FontSize="20" FontFamily="Arial" Foreground="White" HorizontalAlignment="Stretch" Padding="20,0,0,0" VerticalAlignment="Stretch" Background="#232323" BorderBrush="Transparent" BorderThickness="0"  materialDesign:HintAssist.Hint="Тариф абонемента"/>
+        <ComboBox x:Name="vybor" Grid.Column="3" Grid.Row="10" FontSize="20" FontFamily="Arial" Foreground="White" 
+                  HorizontalAlignment="Stretch" Padding="20,0,0,0" VerticalAlignment="Stretch" Background="#232323" 
+                  BorderBrush="Transparent" BorderThickness="0"  materialDesign:HintAssist.Hint="Тренер"/>
 
         <Border Grid.Column="3" Grid.Row="12" CornerRadius="25">
             <Border.Background>
@@ -92,19 +127,19 @@
                     <GradientStop Color="#7F0DEB" Offset="0" />
                 </LinearGradientBrush>
             </Border.Background>
-            <Button Content="Добавить" Foreground="White" Background="Transparent" BorderThickness="0" FontSize="24" FontFamily="Arial"/>
+            <Button Content="Добавить" Foreground="White" Background="Transparent" BorderThickness="0" FontSize="24" FontFamily="Arial" Click="add_click"/>
         </Border>
 
         <Border Grid.Column="3" Grid.Row="14" CornerRadius="25" Background="#7F0DEB">
-            <Button Content="Изменить" Foreground="White" Background="Transparent" BorderThickness="0" FontSize="24" FontFamily="Arial" />
+            <Button Content="Изменить" Foreground="White" Background="Transparent" BorderThickness="0" FontSize="24" FontFamily="Arial" Click="edit_click"/>
         </Border>
 
         <Border Grid.Column="3" Grid.Row="16" CornerRadius="25" Background="#FC4000">
-            <Button Content="Удалить" Foreground="White" Background="Transparent" BorderThickness="0" FontSize="24" FontFamily="Arial" />
+            <Button Content="Удалить" Foreground="White" Background="Transparent" BorderThickness="0" FontSize="24" FontFamily="Arial" Click="delete_click"/>
         </Border>
 
         <Border Grid.Column="3" Grid.Row="18" CornerRadius="25" Background="#AC1F97">
-            <Button Content="Очистить поля" Foreground="White" Background="Transparent" BorderThickness="0" FontSize="24" FontFamily="Arial"/>
+            <Button Content="Очистить поля" Foreground="White" Background="Transparent" BorderThickness="0" FontSize="24" FontFamily="Arial" Click="remove_click"/>
         </Border>
 
     </Grid>
