@@ -24,5 +24,6 @@ namespace YP02._01Proga
         {
             InitializeComponent();
         }
+
     }
 }
