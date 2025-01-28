@@ -45,74 +45,101 @@ namespace YP02._01Proga
 
         private void add_click(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrEmpty(type.Text))
+            try
             {
-                MessageBox.Show("Пустое поле");
-            }
-            else
-            {
-                if (c.TypeDeystviyas1Set.Any(r => r.TypeDeystviya == type.Text))
-                {
-                    MessageBox.Show("Такой тип действия уже существует");
-                    type.Text = null;
-                }
-                else
-                {
-                    TypeDeystviyas1 typee = new TypeDeystviyas1();
-                    typee.TypeDeystviya = type.Text;
-                    c.TypeDeystviyas1Set.Add(typee);
-                    c.SaveChanges();
-                    dg.ItemsSource = c.TypeDeystviyas1Set.ToList();
-                    type.Text = null;
-                }
-            }
-        }
 
-        private void edit_click(object sender, RoutedEventArgs e)
-        {
-            if (string.IsNullOrEmpty(type.Text))
-            {
-                MessageBox.Show("Пустое поле");
-            }
-            else
-            {
-                if (c.TypeDeystviyas1Set.Any(r => r.TypeDeystviya == type.Text))
+
+                if (string.IsNullOrEmpty(type.Text))
                 {
-                    MessageBox.Show("Такой срок абонемента уже существует");
-                    type.Text = null;
+                    MessageBox.Show("Пустое поле");
                 }
                 else
                 {
-                    var selectedItem = dg.SelectedItem as TypeDeystviyas1;
-                    if (selectedItem != null)
+                    if (c.TypeDeystviyas1Set.Any(r => r.TypeDeystviya == type.Text))
                     {
-                        selectedItem.TypeDeystviya = type.Text;
+                        MessageBox.Show("Такой тип действия уже существует");
+                        type.Text = null;
+                    }
+                    else
+                    {
+                        TypeDeystviyas1 typee = new TypeDeystviyas1();
+                        typee.TypeDeystviya = type.Text;
+                        c.TypeDeystviyas1Set.Add(typee);
                         c.SaveChanges();
                         dg.ItemsSource = c.TypeDeystviyas1Set.ToList();
                         type.Text = null;
                     }
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Произошла ошибка: {ex.Message}");
+            }
+        }
+
+        private void edit_click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+
+
+                if (string.IsNullOrEmpty(type.Text))
+                {
+                    MessageBox.Show("Пустое поле");
+                }
+                else
+                {
+                    if (c.TypeDeystviyas1Set.Any(r => r.TypeDeystviya == type.Text))
+                    {
+                        MessageBox.Show("Такой срок абонемента уже существует");
+                        type.Text = null;
+                    }
+                    else
+                    {
+                        var selectedItem = dg.SelectedItem as TypeDeystviyas1;
+                        if (selectedItem != null)
+                        {
+                            selectedItem.TypeDeystviya = type.Text;
+                            c.SaveChanges();
+                            dg.ItemsSource = c.TypeDeystviyas1Set.ToList();
+                            type.Text = null;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Произошла ошибка: {ex.Message}");
+            }
         }
 
         private void delete_click(object sender, RoutedEventArgs e)
         {
-            if (dg.SelectedItem != null)
+            try
             {
-                var selectedItem = dg.SelectedItem as TypeDeystviyas1;
-                var proverka = c.Abonements1Set.Any(o => o.SrokAbonementa_ID == selectedItem.ID_TypeDeystviya);
-                if (proverka)
+
+
+                if (dg.SelectedItem != null)
                 {
-                    MessageBox.Show("Невозможно удалить, так как данные используются в другой таблице");
-                    type.Text = null;
+                    var selectedItem = dg.SelectedItem as TypeDeystviyas1;
+                    var proverka = c.Abonements1Set.Any(o => o.SrokAbonementa_ID == selectedItem.ID_TypeDeystviya);
+                    if (proverka)
+                    {
+                        MessageBox.Show("Невозможно удалить, так как данные используются в другой таблице");
+                        type.Text = null;
+                    }
+                    else
+                    {
+                        c.TypeDeystviyas1Set.Remove(dg.SelectedItem as TypeDeystviyas1);
+                        c.SaveChanges();
+                        dg.ItemsSource = c.TypeDeystviyas1Set.ToList();
+                        type.Text = null;
+                    }
                 }
-                else
-                {
-                    c.TypeDeystviyas1Set.Remove(dg.SelectedItem as TypeDeystviyas1);
-                    c.SaveChanges();
-                    dg.ItemsSource = c.TypeDeystviyas1Set.ToList();
-                    type.Text = null;
-                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Произошла ошибка: {ex.Message}");
             }
         }
 

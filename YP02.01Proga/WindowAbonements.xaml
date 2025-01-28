@@ -98,13 +98,13 @@
                   materialDesign:HintAssist.Hint="Сроки абонемента"/>
 
         <Border Grid.Column="3" Grid.Row="4" CornerRadius="25" Background="#232323">
-            <TextBox x:Name="Stoimost" Foreground="#898989" materialDesign:HintAssist.Hint="Стомость абонемента" 
+            <TextBox x:Name="Stoimost" Foreground="White" materialDesign:HintAssist.Hint="Стомость абонемента" 
                      FontSize="20" FontFamily="Arial" Background="Transparent" BorderThickness="0" Padding="20,0,0,0" 
                      Style="{StaticResource TextBoxNoUnderline}" PreviewTextInput="proverka_input" TextChanged="proverka_text"/>
         </Border>
 
         <Border Grid.Column="3" Grid.Row="6" CornerRadius="25" Background="#232323">
-            <TextBox x:Name="Kolvo" Foreground="#898989" materialDesign:HintAssist.Hint="Количество посещений" 
+            <TextBox x:Name="Kolvo" Foreground="White" materialDesign:HintAssist.Hint="Количество посещений" 
                      FontSize="20" FontFamily="Arial" Background="Transparent" BorderThickness="0" 
                      Padding="20,0,0,0" Style="{StaticResource TextBoxNoUnderline}"
                      PreviewTextInput="proverkaa_input" TextChanged="proverkaa_text"/>

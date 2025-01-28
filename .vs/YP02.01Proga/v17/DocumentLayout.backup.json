@@ -1,119 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|c:\\users\\timof\\source\\repos\\yp02.01proga\\yp02.01proga\\trenermainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\trenermainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|c:\\users\\timof\\source\\repos\\yp02.01proga\\yp02.01proga\\otchet.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\otchet.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|c:\\users\\timof\\source\\repos\\yp02.01proga\\yp02.01proga\\otchet.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\otchet.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|c:\\users\\timof\\source\\repos\\yp02.01proga\\yp02.01proga\\trenermainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\trenermainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|C:\\Users\\timof\\source\\repos\\YP02.01Proga\\yp02.01proga\\userview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\userview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|c:\\users\\timof\\source\\repos\\yp02.01proga\\yp02.01proga\\userview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\userview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 172,
-          "SelectedChildIndex": 3,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Otchet.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\Otchet.xaml.cs",
-              "RelativeDocumentMoniker": "YP02.01Proga\\Otchet.xaml.cs",
-              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\Otchet.xaml.cs",
-              "RelativeToolTip": "YP02.01Proga\\Otchet.xaml.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T02:42:45.493Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Otchet.xaml",
-              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\Otchet.xaml",
-              "RelativeDocumentMoniker": "YP02.01Proga\\Otchet.xaml",
-              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\Otchet.xaml",
-              "RelativeToolTip": "YP02.01Proga\\Otchet.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-28T02:44:10.344Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserView.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\UserView.xaml.cs",
-              "RelativeDocumentMoniker": "YP02.01Proga\\UserView.xaml.cs",
-              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\UserView.xaml.cs",
-              "RelativeToolTip": "YP02.01Proga\\UserView.xaml.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAcwBoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T02:42:38.885Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TrenerMainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\TrenerMainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "YP02.01Proga\\TrenerMainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\TrenerMainWindow.xaml.cs*",
-              "RelativeToolTip": "YP02.01Proga\\TrenerMainWindow.xaml.cs*",
-              "ViewState": "AgIAADIAAAAAAAAAAAAwwEcAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T02:31:39.696Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserView.xaml",
-              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\UserView.xaml",
-              "RelativeDocumentMoniker": "YP02.01Proga\\UserView.xaml",
-              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\UserView.xaml",
-              "RelativeToolTip": "YP02.01Proga\\UserView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-28T02:18:42.163Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TrenerMainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\TrenerMainWindow.xaml",
-              "RelativeDocumentMoniker": "YP02.01Proga\\TrenerMainWindow.xaml",
-              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\TrenerMainWindow.xaml",
-              "RelativeToolTip": "YP02.01Proga\\TrenerMainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-28T02:01:22.036Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

@@ -44,26 +44,28 @@ namespace YP02._01Proga
 
         private void add_click(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrEmpty(Stoimost.Text) || string.IsNullOrEmpty(Kolvo.Text) || vyborSrok.SelectedItem == null || vyborSpec.SelectedItem == null)
+            try
             {
-                MessageBox.Show("Пустое(ые) поле(я)");
-            }
-            else
-            {
-                decimal Price = Convert.ToDecimal(Stoimost.Text);
-                if (Price == 0)
+                if (string.IsNullOrEmpty(Stoimost.Text) || string.IsNullOrEmpty(Kolvo.Text) || vyborSrok.SelectedItem == null || vyborSpec.SelectedItem == null)
                 {
-                    MessageBox.Show("Цена должна быть больше 0");
+                    MessageBox.Show("Пустое(ые) поле(я)");
                 }
                 else
                 {
-                    int kolvo = Convert.ToInt32(Kolvo.Text);
-                    if (kolvo == 0)
+                    decimal Price = Convert.ToDecimal(Stoimost.Text);
+                    if (Price == 0)
                     {
-                        MessageBox.Show("Количество посещений должно быть больше 0");
+                        MessageBox.Show("Цена должна быть больше 0");
                     }
                     else
                     {
+                        int kolvo = Convert.ToInt32(Kolvo.Text);
+                        if (kolvo == 0)
+                        {
+                            MessageBox.Show("Количество посещений должно быть больше 0");
+                        }
+                        else
+                        {
                             Abonements1 ab = new Abonements1();
                             var vybor = (SrokiAbonements)vyborSrok.SelectedItem;
                             var vybor1 = (TypeDeystviyas1)vyborSpec.SelectedItem;
@@ -76,66 +78,91 @@ namespace YP02._01Proga
                             dg.ItemsSource = c.Abonements1Set.ToList();
                             Clear();
 
+                        }
                     }
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Произошла ошибка: {ex.Message}");
             }
         }
 
+
+
         private void edit_click(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrEmpty(Stoimost.Text) || string.IsNullOrEmpty(Kolvo.Text) || vyborSrok.SelectedItem == null || vyborSpec.SelectedItem == null)
+            try
             {
-                MessageBox.Show("Пустое(ые) поле(я)");
-            }
-            else
-            {
-                decimal Price = Convert.ToDecimal(Stoimost.Text);
-                if (Price == 0)
+
+
+                if (string.IsNullOrEmpty(Stoimost.Text) || string.IsNullOrEmpty(Kolvo.Text) || vyborSrok.SelectedItem == null || vyborSpec.SelectedItem == null)
                 {
-                    MessageBox.Show("Цена должна быть больше 0");
+                    MessageBox.Show("Пустое(ые) поле(я)");
                 }
                 else
                 {
-                    int kolvo = Convert.ToInt32(Kolvo.Text);
-                    if (kolvo == 0)
+                    decimal Price = Convert.ToDecimal(Stoimost.Text);
+                    if (Price == 0)
                     {
-                        MessageBox.Show("Количество посещений должно быть больше 0");
+                        MessageBox.Show("Цена должна быть больше 0");
                     }
                     else
                     {
-                        var ab = dg.SelectedItem as Abonements1;
-                        var vybor = (SrokiAbonements)vyborSrok.SelectedItem;
-                        var vybor1 = (TypeDeystviyas1)vyborSpec.SelectedItem;
-                        ab.SrokAbonementa_ID = vybor.ID_SrokAbonementa;
-                        ab.TypeDeystviya_ID = vybor1.ID_TypeDeystviya;
-                        ab.ColvoPosesheniy = kolvo;
-                        ab.Cost = Price;
+                        int kolvo = Convert.ToInt32(Kolvo.Text);
+                        if (kolvo == 0)
+                        {
+                            MessageBox.Show("Количество посещений должно быть больше 0");
+                        }
+                        else
+                        {
+                            var ab = dg.SelectedItem as Abonements1;
+                            var vybor = (SrokiAbonements)vyborSrok.SelectedItem;
+                            var vybor1 = (TypeDeystviyas1)vyborSpec.SelectedItem;
+                            ab.SrokAbonementa_ID = vybor.ID_SrokAbonementa;
+                            ab.TypeDeystviya_ID = vybor1.ID_TypeDeystviya;
+                            ab.ColvoPosesheniy = kolvo;
+                            ab.Cost = Price;
+                            c.SaveChanges();
+                            dg.ItemsSource = c.Abonements1Set.ToList();
+                            Clear();
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Произошла ошибка: {ex.Message}");
+            }
+        }
+
+        private void delete_click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+
+
+                if (dg.SelectedItem != null)
+                {
+                    var selectedItem = dg.SelectedItem as Abonements1;
+                    var proverka = c.Clients1Set.Any(o => o.Abonement_ID == selectedItem.ID_Abonement);
+                    if (proverka)
+                    {
+                        MessageBox.Show("Невозможно удалить, так как данные используются в другой таблице");
+                        Clear();
+                    }
+                    else
+                    {
+                        c.Abonements1Set.Remove(selectedItem);
                         c.SaveChanges();
                         dg.ItemsSource = c.Abonements1Set.ToList();
                         Clear();
                     }
                 }
             }
-        }
-
-        private void delete_click(object sender, RoutedEventArgs e)
-        {
-            if (dg.SelectedItem != null)
+            catch (Exception ex)
             {
-                var selectedItem = dg.SelectedItem as Abonements1;
-                var proverka = c.Clients1Set.Any(o => o.Abonement_ID == selectedItem.ID_Abonement);
-                if (proverka)
-                {
-                    MessageBox.Show("Невозможно удалить, так как данные используются в другой таблице");
-                    Clear();
-                }
-                else
-                {
-                    c.Abonements1Set.Remove(selectedItem);
-                    c.SaveChanges();
-                    dg.ItemsSource = c.Abonements1Set.ToList();
-                    Clear();
-                }
+                MessageBox.Show($"Произошла ошибка: {ex.Message}");
             }
 
         }

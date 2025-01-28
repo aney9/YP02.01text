@@ -44,11 +44,11 @@
     Grid.Row="1" 
     CornerRadius="25"
     Background="#232323">
-            <TextBox x:Name="login" Foreground="#898989" materialDesign:HintAssist.Hint="Логин" FontSize="20" FontFamily="Arial" Background="Transparent" BorderThickness="0" Padding="20,0,0,0" Style="{StaticResource TextBoxNoUnderline}"/>
+            <TextBox x:Name="login" Foreground="White" materialDesign:HintAssist.Hint="Логин" FontSize="20" FontFamily="Arial" Background="Transparent" BorderThickness="0" Padding="20,0,0,0" Style="{StaticResource TextBoxNoUnderline}"/>
         </Border>
 
         <Border Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="3" CornerRadius="25" Background="#232323">
-            <TextBox x:Name="pass" Foreground="#898989" materialDesign:HintAssist.Hint="Пароль" FontSize="20" Background="Transparent" BorderThickness="0" Padding="20,0,0,0" Style="{StaticResource TextBoxNoUnderline}"/>
+            <TextBox x:Name="pass" Foreground="White" materialDesign:HintAssist.Hint="Пароль" FontSize="20" Background="Transparent" BorderThickness="0" Padding="20,0,0,0" Style="{StaticResource TextBoxNoUnderline}"/>
         </Border>
 
         <Border Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="3" CornerRadius="25">
@@ -58,7 +58,7 @@
                     <GradientStop Color="#7F0DEB" Offset="0" />
                 </LinearGradientBrush>
             </Border.Background>
-            <Button Content="Авторизация" Foreground="White" Background="Transparent" BorderThickness="0" Click="Button_Click_2" />
+            <Button Content="Авторизация" Foreground="White" Background="Transparent" BorderThickness="0" Click="Button_Click_2" FontSize="18" FontFamily="Arial"/>
         </Border>
 
         <Border Grid.Column="1" Grid.Row="7" CornerRadius="25">
@@ -68,7 +68,7 @@
                     <GradientStop Color="#7F0DEB" Offset="0" />
                 </LinearGradientBrush>
             </Border.Background>
-            <Button Content="Я тренер" Foreground="White" Background="Transparent" BorderThickness="0" Click="Button_Click" />
+            <Button Content="Я тренер" Foreground="White" Background="Transparent" BorderThickness="0" Click="Button_Click" FontSize="18" FontFamily="Arial" />
         </Border>
 
         <Border Grid.Column="3" Grid.Row="7" CornerRadius="25">
@@ -78,7 +78,7 @@
                     <GradientStop Color="#7F0DEB" Offset="0" />
                 </LinearGradientBrush>
             </Border.Background>
-            <Button Content="Я администратор" Foreground="White" Background="Transparent" BorderThickness="0" Click="Button_Click_1"/>
+            <Button Content="Я администратор" Foreground="White" Background="Transparent" BorderThickness="0" Click="Button_Click_1" FontSize="18" FontFamily="Arial"/>
         </Border>
     </Grid>
 </Window>

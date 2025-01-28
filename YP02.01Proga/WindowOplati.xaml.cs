@@ -82,24 +82,33 @@ namespace YP02._01Proga
 
         private void edit_click(object sender, RoutedEventArgs e)
         {
-            if (vyborC.SelectedItem == null || string.IsNullOrEmpty(sum.Text) ||
-                data.SelectedDate == null)
+            try
             {
-                MessageBox.Show("Пустое(ые) поле(я)");
-            }
-            else
-            {
-                decimal Price = Convert.ToDecimal(sum.Text);
-                var o = dg.SelectedItem as Oplati1;
-                var vybor = (Clients1)vyborC.SelectedItem;
-                o.Client_ID = vybor.ID_Client;
-                o.CodeOplati = int.Parse(code.Text);
-                o.Summa = Price;
-                o.DateOplati = data.SelectedDate.Value.ToString("yyyy-MM-dd");
-                c.SaveChanges();
-                dg.ItemsSource = c.Oplati1Set.ToList();
-                Clear();
 
+
+                if (vyborC.SelectedItem == null || string.IsNullOrEmpty(sum.Text) ||
+                    data.SelectedDate == null)
+                {
+                    MessageBox.Show("Пустое(ые) поле(я)");
+                }
+                else
+                {
+                    decimal Price = Convert.ToDecimal(sum.Text);
+                    var o = dg.SelectedItem as Oplati1;
+                    var vybor = (Clients1)vyborC.SelectedItem;
+                    o.Client_ID = vybor.ID_Client;
+                    o.CodeOplati = int.Parse(code.Text);
+                    o.Summa = Price;
+                    o.DateOplati = data.SelectedDate.Value.ToString("yyyy-MM-dd");
+                    c.SaveChanges();
+                    dg.ItemsSource = c.Oplati1Set.ToList();
+                    Clear();
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Произошла ошибка: {ex.Message}");
             }
         }
 

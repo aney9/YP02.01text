@@ -70,7 +70,7 @@
                     <GradientStop Color="#7F0DEB" Offset="1" />
                 </LinearGradientBrush>
             </Border.Background>
-            <Button Content="Клиенты" Foreground="White" Background="Transparent" BorderThickness="0" FontSize="24" FontFamily="Arial" Click="Button_Click"/>
+            <Button Content="Клиенты" Foreground="White" Background="Transparent" BorderThickness="0" FontSize="22" FontFamily="Arial" Click="Button_Click"/>
         </Border>
 
 
@@ -81,7 +81,7 @@
                     <GradientStop Color="#7F0DEB" Offset="1" />
                 </LinearGradientBrush>
             </Border.Background>
-            <Button Content="Тренеры" Foreground="White" Background="Transparent" BorderThickness="0" FontSize="24" FontFamily="Arial" Click="trener_click"/>
+            <Button Content="Тренеры" Foreground="White" Background="Transparent" BorderThickness="0" FontSize="22" FontFamily="Arial" Click="trener_click"/>
         </Border>
 
 
@@ -92,7 +92,7 @@
                     <GradientStop Color="#7F0DEB" Offset="1" />
                 </LinearGradientBrush>
             </Border.Background>
-            <Button Content="Абонементы" Foreground="White" Background="Transparent" BorderThickness="0" FontSize="24" FontFamily="Arial" Click="Abonements"/>
+            <Button Content="Абонементы" Foreground="White" Background="Transparent" BorderThickness="0" FontSize="22" FontFamily="Arial" Click="Abonements"/>
         </Border>
 
         <Border Grid.Column="2" Grid.Row="8" CornerRadius="25">
@@ -102,7 +102,7 @@
                     <GradientStop Color="#7F0DEB" Offset="1" />
                 </LinearGradientBrush>
             </Border.Background>
-            <Button Content="Занятия" Foreground="White" Background="Transparent" BorderThickness="0" FontSize="24" FontFamily="Arial" Click="zaniatiya_click"/>
+            <Button Content="Занятия" Foreground="White" Background="Transparent" BorderThickness="0" FontSize="22" FontFamily="Arial" Click="zaniatiya_click"/>
         </Border>
 
         <Border Grid.Column="2" Grid.Row="10" CornerRadius="25">
@@ -112,7 +112,7 @@
                     <GradientStop Color="#7F0DEB" Offset="1" />
                 </LinearGradientBrush>
             </Border.Background>
-            <Button Content="Оплаты" Foreground="White" Background="Transparent" BorderThickness="0" FontSize="24" FontFamily="Arial" Click="oplati_click"/>
+            <Button Content="Оплаты" Foreground="White" Background="Transparent" BorderThickness="0" FontSize="22" FontFamily="Arial" Click="oplati_click"/>
         </Border>
 
         <Border Grid.Column="2" Grid.Row="12" CornerRadius="25">
@@ -122,7 +122,7 @@
                     <GradientStop Color="#7F0DEB" Offset="1" />
                 </LinearGradientBrush>
             </Border.Background>
-            <Button Content="Группы" Foreground="White" Background="Transparent" BorderThickness="0" FontSize="24" FontFamily="Arial" Click="groups_click"/>
+            <Button Content="Группы" Foreground="White" Background="Transparent" BorderThickness="0" FontSize="22" FontFamily="Arial" Click="groups_click"/>
         </Border>
 
         <Border Grid.Column="2" Grid.Row="14" CornerRadius="25">
@@ -132,7 +132,7 @@
                     <GradientStop Color="#7F0DEB" Offset="1" />
                 </LinearGradientBrush>
             </Border.Background>
-            <Button Content="Тип тренера" Foreground="White" Background="Transparent" BorderThickness="0" FontSize="24" FontFamily="Arial" Click="tiptrenera_click"/>
+            <Button Content="Тип тренера" Foreground="White" Background="Transparent" BorderThickness="0" FontSize="22" FontFamily="Arial" Click="tiptrenera_click"/>
         </Border>
 
         <Border Grid.Column="2" Grid.Row="16" CornerRadius="25">
@@ -142,7 +142,7 @@
                     <GradientStop Color="#7F0DEB" Offset="1" />
                 </LinearGradientBrush>
             </Border.Background>
-            <Button Content="Сроки абонемента" Foreground="White" Background="Transparent" BorderThickness="0" FontSize="24" FontFamily="Arial" Click="sroki_click"/>
+            <Button Content="Сроки абонемента" Foreground="White" Background="Transparent" BorderThickness="0" FontSize="22" FontFamily="Arial" Click="sroki_click"/>
         </Border>
 
         <Border Grid.Column="2" Grid.Row="18" CornerRadius="25">
@@ -152,7 +152,7 @@
                     <GradientStop Color="#7F0DEB" Offset="1" />
                 </LinearGradientBrush>
             </Border.Background>
-            <Button Content="Область действия абонемента" Foreground="White" Background="Transparent" BorderThickness="0" FontSize="24" FontFamily="Arial" Click="oblast_click"/>
+            <Button Content="Тип абонемента" Foreground="White" Background="Transparent" BorderThickness="0" FontSize="22" FontFamily="Arial" Click="oblast_click"/>
         </Border>
 
 

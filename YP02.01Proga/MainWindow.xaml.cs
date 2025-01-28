@@ -51,6 +51,11 @@ namespace YP02._01Proga
                 return;
             }
 
+            if (pass.Text.Length < 4)
+            {
+                MessageBox.Show("Пароль должен быть больше 4 символов");
+            }
+
             foreach (var v in vxod)
             {
                 if (v.Loginn == login.Text && v.Passwordd == pass.Text)

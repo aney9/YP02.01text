@@ -95,27 +95,28 @@ GridLinesVisibility="All" HorizontalGridLinesBrush="Black" VerticalGridLinesBrus
         </DataGrid>
 
         <Border Grid.Column="3" Grid.Row="2" CornerRadius="25" Background="#232323">
-            <TextBox x:Name="name" Foreground="#898989" materialDesign:HintAssist.Hint="Название занятия" FontSize="20" FontFamily="Arial" 
+            <TextBox x:Name="name" Foreground="White" materialDesign:HintAssist.Hint="Название занятия" FontSize="20" FontFamily="Arial" 
                      Background="Transparent" BorderThickness="0" Padding="20,0,0,0" Style="{StaticResource TextBoxNoUnderline}"
                      PreviewTextInput="Proverka"/>
         </Border>
 
         <Border Grid.Column="3" Grid.Row="4" Background="#232323">
-            <DatePicker x:Name="data" Foreground="#898989" materialDesign:HintAssist.Hint="Дата занятия" FontSize="20" 
+            <DatePicker x:Name="data" Foreground="White" materialDesign:HintAssist.Hint="Дата занятия" FontSize="20" 
                         FontFamily="Arial" Background="Transparent" BorderThickness="0" Padding="0,0,0,0" IsTodayHighlighted="False"
                         IsEnabled="False"
                         />
         </Border>
 
         <Border Grid.Column="3" Grid.Row="6" CornerRadius="25" Background="#232323">
-            <TextBox x:Name="chas" Foreground="#898989" materialDesign:HintAssist.Hint="Количкство часов" FontSize="20" 
-                     FontFamily="Arial" Background="Transparent" BorderThickness="0" Padding="20,0,0,0" Style="{StaticResource TextBoxNoUnderline}"/>
+            <TextBox x:Name="chas" Foreground="White" materialDesign:HintAssist.Hint="Количество часов" FontSize="20" 
+                     FontFamily="Arial" Background="Transparent" BorderThickness="0" Padding="20,0,0,0" 
+                     Style="{StaticResource TextBoxNoUnderline}" PreviewTextInput="proverkaa_input" TextChanged="proverkaaa_text"/>
         </Border>
 
         <Border Grid.Column="3" Grid.Row="8" CornerRadius="25" Background="#232323">
             <TextBox x:Name="uchast" Foreground="White" materialDesign:HintAssist.Hint="Количество участников" 
                      FontSize="20" FontFamily="Arial" Background="Transparent" BorderThickness="0" 
-                     Padding="20,0,0,0" Style="{StaticResource TextBoxNoUnderline}"/>
+                     Padding="20,0,0,0" Style="{StaticResource TextBoxNoUnderline}" PreviewTextInput="proverkaa_input" TextChanged="proverka1_text"/>
         </Border>
 
         <ComboBox x:Name="vybor" Grid.Column="3" Grid.Row="10" FontSize="20" FontFamily="Arial" Foreground="White" 

@@ -50,74 +50,101 @@ namespace YP02._01Proga
 
         private void add_click(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrEmpty(Type.Text))
+            try
             {
-                MessageBox.Show("Пустое поле");
-            }
-            else
-            {
-                if (c.TrenerTypes1Set.Any(r => r.TrenerType == Type.Text))
-                {
-                    MessageBox.Show("Такой срок абонемента уже существует");
-                    Type.Text = null;
-                }
-                else
-                {
-                    TrenerTypes1 tr = new TrenerTypes1();
-                    tr.TrenerType = Type.Text;
-                    c.TrenerTypes1Set.Add(tr);
-                    c.SaveChanges();
-                    dg.ItemsSource = c.TrenerTypes1Set.ToList();
-                    Type.Text = null;
-                }
-            }
-        }
 
-        private void edit_click(object sender, RoutedEventArgs e)
-        {
-            if (string.IsNullOrEmpty(Type.Text))
-            {
-                MessageBox.Show("Пустое поле");
-            }
-            else
-            {
-                if (c.TrenerTypes1Set.Any(r => r.TrenerType == Type.Text))
+
+                if (string.IsNullOrEmpty(Type.Text))
                 {
-                    MessageBox.Show("Такой тип тренера уже существует");
-                    Type.Text = null;
+                    MessageBox.Show("Пустое поле");
                 }
                 else
                 {
-                    var selectedItem = dg.SelectedItem as TrenerTypes1;
-                    if (selectedItem != null)
+                    if (c.TrenerTypes1Set.Any(r => r.TrenerType == Type.Text))
                     {
-                        selectedItem.TrenerType = Type.Text;
+                        MessageBox.Show("Такой срок абонемента уже существует");
+                        Type.Text = null;
+                    }
+                    else
+                    {
+                        TrenerTypes1 tr = new TrenerTypes1();
+                        tr.TrenerType = Type.Text;
+                        c.TrenerTypes1Set.Add(tr);
                         c.SaveChanges();
                         dg.ItemsSource = c.TrenerTypes1Set.ToList();
                         Type.Text = null;
                     }
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Произошла ошибка: {ex.Message}");
+            }
+        }
+
+        private void edit_click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+
+
+                if (string.IsNullOrEmpty(Type.Text))
+                {
+                    MessageBox.Show("Пустое поле");
+                }
+                else
+                {
+                    if (c.TrenerTypes1Set.Any(r => r.TrenerType == Type.Text))
+                    {
+                        MessageBox.Show("Такой тип тренера уже существует");
+                        Type.Text = null;
+                    }
+                    else
+                    {
+                        var selectedItem = dg.SelectedItem as TrenerTypes1;
+                        if (selectedItem != null)
+                        {
+                            selectedItem.TrenerType = Type.Text;
+                            c.SaveChanges();
+                            dg.ItemsSource = c.TrenerTypes1Set.ToList();
+                            Type.Text = null;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Произошла ошибка: {ex.Message}");
+            }
         }
 
         private void delete_click(object sender, RoutedEventArgs e)
         {
-            if (dg.SelectedItem != null)
+            try
             {
-                var selectedItem = dg.SelectedItem as TrenerTypes1;
-                var proverka = c.Abonements1Set.Any(o => o.TypeDeystviya_ID == selectedItem.ID_TrenerTypes);
-                if (proverka)
+
+
+                if (dg.SelectedItem != null)
                 {
-                    MessageBox.Show("Невозможно удалить, так как данные используются в другой таблице");
-                    Type.Text = null;
+                    var selectedItem = dg.SelectedItem as TrenerTypes1;
+                    var proverka = c.Abonements1Set.Any(o => o.TypeDeystviya_ID == selectedItem.ID_TrenerTypes);
+                    if (proverka)
+                    {
+                        MessageBox.Show("Невозможно удалить, так как данные используются в другой таблице");
+                        Type.Text = null;
+                    }
+                    else
+                    {
+                        c.TrenerTypes1Set.Remove(dg.SelectedItem as TrenerTypes1);
+                        c.SaveChanges();
+                        dg.ItemsSource = c.TrenerTypes1Set.ToList();
+                        Type.Text = null;
+                    }
                 }
-                else
-                {
-                    c.TrenerTypes1Set.Remove(dg.SelectedItem as TrenerTypes1);
-                    c.SaveChanges();
-                    dg.ItemsSource = c.TrenerTypes1Set.ToList();
-                    Type.Text = null;
-                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Произошла ошибка: {ex.Message}");
             }
         }
 

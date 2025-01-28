@@ -35,13 +35,6 @@ namespace YP02._01Proga
             InitializeComponent();
         }
 
-        private void dg_select(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
-        
-
         private void exit_click(object sender, RoutedEventArgs e)
         {
             MainWindow main = new MainWindow();

@@ -54,14 +54,14 @@
         </Button>
 
         <DataGrid x:Name="dg" Grid.Column="0" Grid.RowSpan="23" Grid.ColumnSpan="2" Grid.Row="1" Background="#C4C4C4" Foreground="Black"
-      IsReadOnly="True" AutoGenerateColumns="False" SelectionChanged="dg_select"
-      GridLinesVisibility="All" HorizontalGridLinesBrush="Black" VerticalGridLinesBrush="Black">
+      IsReadOnly="True" AutoGenerateColumns="False"
+       HorizontalGridLinesBrush="Black" VerticalGridLinesBrush="Black">
         </DataGrid>
 
         
 
 
-        <Border Grid.Column="3" Grid.Row="6" CornerRadius="25">
+        <Border Grid.Column="3" Grid.Row="2" CornerRadius="25">
             <Border.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
                     <GradientStop Color="#FC4000" Offset="1" />

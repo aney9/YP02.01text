@@ -19,6 +19,7 @@ namespace YP02._01Proga
     /// </summary>
     public partial class WindowAuthorizCl : Window
     {
+        private ProFormEntities c = new ProFormEntities();
         public WindowAuthorizCl()
         {
             InitializeComponent();
@@ -40,8 +41,44 @@ namespace YP02._01Proga
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            TrenerMainWindow tr = new TrenerMainWindow();
-            tr.Show(); this.Close();
+            var vxod = c.Sotrudniki.ToList();
+            bool avtoriz = false;
+
+            if (string.IsNullOrWhiteSpace(login.Text) || string.IsNullOrWhiteSpace(pass.Text))
+            {
+                MessageBox.Show("Пожалуйста, заполните все поля.");
+                return;
+            }
+
+            if (pass.Text.Length < 4)
+            {
+                MessageBox.Show("Пароль должен быть больше 4 символов");
+            }
+
+            foreach (var v in vxod)
+            {
+                if (v.Loginn == login.Text && v.Passwordd == pass.Text)
+                {
+                    avtoriz = true;
+
+                    if (v.RoleSotrudnik_ID == 3)
+                    {
+                        TrenerMainWindow tr = new TrenerMainWindow();
+                        tr.Show();
+                        this.Close();
+                    }
+
+                    Close();
+                    break;
+                }
+            }
+
+            if (!avtoriz)
+            {
+                MessageBox.Show("Такого логина/пароля не существует. Попробуйте еще раз.");
+                login.Text = null;
+                pass.Text = null;
+            }
         }
     }
 }

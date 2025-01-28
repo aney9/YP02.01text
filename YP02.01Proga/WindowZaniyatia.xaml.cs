@@ -149,5 +149,29 @@ namespace YP02._01Proga
             uchast = null;
             vybor.SelectedItem = null;
         }
+
+        private void proverkaa_input(object sender, TextCompositionEventArgs e)
+        {
+            var text = sender as TextBox;
+            Regex regex = new Regex("^[0-9]+$");
+            e.Handled = !regex.IsMatch(e.Text);
+        }
+
+        private void proverkaaa_text(object sender, TextChangedEventArgs e)
+        {
+            var text = sender as TextBox;
+            if (!string.IsNullOrEmpty(chas.Text) && !Regex.IsMatch(text.Text, @"^\d+$"))
+            {
+                text.Text = string.Empty;
+            }
+        }
+        private void proverka1_text(object sender, TextChangedEventArgs e)
+        {
+            var text = sender as TextBox;
+            if (!string.IsNullOrEmpty(uchast.Text) && !Regex.IsMatch(text.Text, @"^\d+$"))
+            {
+                text.Text = string.Empty;
+            }
+        }
     }
 }

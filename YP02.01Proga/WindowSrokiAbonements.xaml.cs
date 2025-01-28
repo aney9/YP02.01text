@@ -46,54 +46,72 @@ namespace YP02._01Proga
 
         private void add_click(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrEmpty(Srok.Text))
+            try
             {
-                MessageBox.Show("Пустое поле");
-            }
-            else
-            {
-                if (c.SrokiAbonements.Any(r => r.SrokAbonementa == Srok.Text))
+
+
+                if (string.IsNullOrEmpty(Srok.Text))
                 {
-                    MessageBox.Show("Такой срок абонемента уже существует");
-                    Srok.Text = null;
+                    MessageBox.Show("Пустое поле");
                 }
                 else
                 {
-                    SrokiAbonements srok = new SrokiAbonements();
-                    srok.SrokAbonementa = Srok.Text;
-                    c.SrokiAbonements.Add(srok);
-                    c.SaveChanges();
-                    dg.ItemsSource = c.SrokiAbonements.ToList();
-                    Srok.Text = null;
+                    if (c.SrokiAbonements.Any(r => r.SrokAbonementa == Srok.Text))
+                    {
+                        MessageBox.Show("Такой срок абонемента уже существует");
+                        Srok.Text = null;
+                    }
+                    else
+                    {
+                        SrokiAbonements srok = new SrokiAbonements();
+                        srok.SrokAbonementa = Srok.Text;
+                        c.SrokiAbonements.Add(srok);
+                        c.SaveChanges();
+                        dg.ItemsSource = c.SrokiAbonements.ToList();
+                        Srok.Text = null;
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Произошла ошибка: {ex.Message}");
             }
 
         }
 
         private void edit_click(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrEmpty(Srok.Text))
+            try
             {
-                MessageBox.Show("Пустое поле");
-            }
-            else
-            {
-                if (c.SrokiAbonements.Any(r => r.SrokAbonementa == Srok.Text))
+
+
+                if (string.IsNullOrEmpty(Srok.Text))
                 {
-                    MessageBox.Show("Такой срок абонемента уже существует");
-                    Srok.Text = null;
+                    MessageBox.Show("Пустое поле");
                 }
                 else
                 {
-                    var selectedItem = dg.SelectedItem as SrokiAbonements;
-                    if (selectedItem != null)
+                    if (c.SrokiAbonements.Any(r => r.SrokAbonementa == Srok.Text))
                     {
-                        selectedItem.SrokAbonementa = Srok.Text;
-                        c.SaveChanges();
-                        dg.ItemsSource = c.SrokiAbonements.ToList();
+                        MessageBox.Show("Такой срок абонемента уже существует");
                         Srok.Text = null;
                     }
+                    else
+                    {
+                        var selectedItem = dg.SelectedItem as SrokiAbonements;
+                        if (selectedItem != null)
+                        {
+                            selectedItem.SrokAbonementa = Srok.Text;
+                            c.SaveChanges();
+                            dg.ItemsSource = c.SrokiAbonements.ToList();
+                            Srok.Text = null;
+                        }
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Произошла ошибка: {ex.Message}");
             }
         }
 
@@ -104,22 +122,31 @@ namespace YP02._01Proga
 
         private void delete_click(object sender, RoutedEventArgs e)
         {
-            if (dg.SelectedItem != null)
+            try
             {
-                var selectedItem = dg.SelectedItem as SrokiAbonements;
-                var proverka = c.Abonements1Set.Any(o => o.SrokAbonementa_ID == selectedItem.ID_SrokAbonementa);
-                if (proverka)
+
+
+                if (dg.SelectedItem != null)
                 {
-                    MessageBox.Show("Невозможно удалить, так как данные используются в другой таблице");
-                    Srok.Text = null;
+                    var selectedItem = dg.SelectedItem as SrokiAbonements;
+                    var proverka = c.Abonements1Set.Any(o => o.SrokAbonementa_ID == selectedItem.ID_SrokAbonementa);
+                    if (proverka)
+                    {
+                        MessageBox.Show("Невозможно удалить, так как данные используются в другой таблице");
+                        Srok.Text = null;
+                    }
+                    else
+                    {
+                        c.SrokiAbonements.Remove(dg.SelectedItem as SrokiAbonements);
+                        c.SaveChanges();
+                        dg.ItemsSource = c.SrokiAbonements.ToList();
+                        Srok.Text = null;
+                    }
                 }
-                else
-                {
-                    c.SrokiAbonements.Remove(dg.SelectedItem as SrokiAbonements);
-                    c.SaveChanges();
-                    dg.ItemsSource = c.SrokiAbonements.ToList();
-                    Srok.Text = null;
-                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Произошла ошибка: {ex.Message}");
             }
         }
 

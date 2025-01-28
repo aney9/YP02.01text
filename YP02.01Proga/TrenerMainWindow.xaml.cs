@@ -50,19 +50,14 @@ namespace YP02._01Proga
 
         private void BindDataToList()
         {
-            // Очищаем список, чтобы избежать старых данных
             List.Items.Clear();
 
-            // Проходим по каждому элементу в ZaniatiyaList
             foreach (var item in ZaniatiyaList)
             {
-                // Создаем новый экземпляр UserView
                 UserView userView = new UserView();
 
-                // Привязываем данные к экземпляру UserView
                 userView.DataContext = item;
 
-                // Добавляем UserView в ListBox
                 List.Items.Add(userView);
             }
         }
@@ -92,7 +87,6 @@ namespace YP02._01Proga
                 writer.WriteLine(CenterString(header, lineWidth));
                 writer.WriteLine(new string('-', lineWidth));
 
-                // Выборка данных из таблиц
                 var ZaniatiyaData = c.Zaniatiya1Set
                     .Join(c.Treners1Set, z => z.Trener_ID, t => t.ID_Trener, (z, t) => new { z, t })
                     .Select(x => new
@@ -166,6 +160,13 @@ namespace YP02._01Proga
             {
                 MessageBox.Show($"Ошибка при создании PDF: {ex.Message}");
             }
+        }
+
+        private void exit_click(object sender, RoutedEventArgs e)
+        {
+            WindowAuthorizCl tr = new WindowAuthorizCl();
+            tr.Show();
+            this.Close();
         }
     }
 }

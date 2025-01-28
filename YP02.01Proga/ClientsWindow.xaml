@@ -103,31 +103,31 @@
         </DataGrid>
 
         <Border Grid.Column="3" Grid.Row="2" CornerRadius="25" Background="#232323">
-            <TextBox x:Name="name" Foreground="#898989" materialDesign:HintAssist.Hint="Имя" 
+            <TextBox x:Name="name" Foreground="White" materialDesign:HintAssist.Hint="Имя" 
                      FontSize="20" FontFamily="Arial" Background="Transparent" BorderThickness="0" Padding="20,0,0,0" 
                      Style="{StaticResource TextBoxNoUnderline}" PreviewTextInput="Proverka"/>
         </Border>
 
         <Border Grid.Column="3" Grid.Row="4" CornerRadius="25" Background="#232323">
-            <TextBox x:Name="surname" Foreground="#898989" materialDesign:HintAssist.Hint="Фамилия" FontSize="20" 
+            <TextBox x:Name="surname" Foreground="White" materialDesign:HintAssist.Hint="Фамилия" FontSize="20" 
                      FontFamily="Arial" Background="Transparent" BorderThickness="0" 
                      Padding="20,0,0,0" Style="{StaticResource TextBoxNoUnderline}" PreviewTextInput="Proverka"/>
         </Border>
 
         <Border Grid.Column="3" Grid.Row="6" CornerRadius="25" Background="#232323">
-            <TextBox x:Name="middlename" Foreground="#898989" materialDesign:HintAssist.Hint="Отчество" 
+            <TextBox x:Name="middlename" Foreground="White" materialDesign:HintAssist.Hint="Отчество" 
                      FontSize="20" FontFamily="Arial" Background="Transparent" BorderThickness="0" 
                      Padding="20,0,0,0" Style="{StaticResource TextBoxNoUnderline}" PreviewTextInput="Proverka"/>
         </Border>
 
         <Border Grid.Column="3" Grid.Row="8" CornerRadius="25" Background="#232323">
-            <TextBox x:Name="phone" Foreground="#898989" materialDesign:HintAssist.Hint="Телефон" FontSize="20" 
+            <TextBox x:Name="phone" Foreground="White" materialDesign:HintAssist.Hint="Телефон" FontSize="20" 
                      FontFamily="Arial" Background="Transparent" BorderThickness="0" Padding="20,0,0,0" 
                      Style="{StaticResource TextBoxNoUnderline}" GotFocus="phone_gotfocus"
                      PreviewTextInput="phone_input" TextChanged="phone_text"/>
         </Border>
 
-        <Border Grid.Column="3" Grid.Row="10" CornerRadius="25" Background="#232323">
+        <Border Grid.Column="3" Grid.Row="10" Background="#232323">
             <DatePicker x:Name="data" IsEnabled="False" Foreground="White" materialDesign:HintAssist.Hint="Дата покупки" 
                         FontSize="20" FontFamily="Arial" Background="Transparent" BorderThickness="0" Padding="20,0,0,0"/>
         </Border>

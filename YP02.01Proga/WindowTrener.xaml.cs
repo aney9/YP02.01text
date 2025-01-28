@@ -39,50 +39,59 @@ namespace YP02._01Proga
 
         private void add_click(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrEmpty(name.Text) || string.IsNullOrEmpty(surname.Text) || string.IsNullOrEmpty(middlename.Text) ||
-                string.IsNullOrEmpty(email.Text) || string.IsNullOrEmpty(password.Text) || vybor.SelectedItem == null)
+            try
             {
-                MessageBox.Show("Пустое(ые) поле(я)");
-                Clear();
-            }
-            else
-            {
-                if (c.Treners1Set.Any(r => r.Email == email.Text))
+
+
+                if (string.IsNullOrEmpty(name.Text) || string.IsNullOrEmpty(surname.Text) || string.IsNullOrEmpty(middlename.Text) ||
+                    string.IsNullOrEmpty(email.Text) || string.IsNullOrEmpty(password.Text) || vybor.SelectedItem == null)
                 {
-                    MessageBox.Show("Тренер с такой почтой уже существует");
+                    MessageBox.Show("Пустое(ые) поле(я)");
                     Clear();
                 }
                 else
                 {
-                    if (!CheckEmail(email.Text)) 
+                    if (c.Treners1Set.Any(r => r.Email == email.Text))
                     {
-                        MessageBox.Show("Неверно введена почта");
-                        email.Text = null;
+                        MessageBox.Show("Тренер с такой почтой уже существует");
+                        Clear();
                     }
                     else
                     {
-                        if (password.Text.Length < 4)
+                        if (!CheckEmail(email.Text))
                         {
-                            MessageBox.Show("Пароль должен быть больше 4-х символов");
-                            password.Text = null;
+                            MessageBox.Show("Неверно введена почта");
+                            email.Text = null;
                         }
                         else
                         {
-                            Treners1 tr = new Treners1();
-                            var vyborr = (TrenerTypes1)vybor.SelectedItem;
-                            tr.TrenerTypes_ID = vyborr.ID_TrenerTypes;
-                            tr.TrenerName = name.Text;
-                            tr.TrenerSurname = surname.Text;
-                            tr.TrenerMiddleName = middlename.Text;
-                            tr.Email = email.Text;
-                            tr.Passwordd = password.Text;
-                            c.Treners1Set.Add(tr);
-                            c.SaveChanges();
-                            dg.ItemsSource = c.Treners1Set.ToList();
-                            Clear();
+                            if (password.Text.Length < 4)
+                            {
+                                MessageBox.Show("Пароль должен быть больше 4-х символов");
+                                password.Text = null;
+                            }
+                            else
+                            {
+                                Treners1 tr = new Treners1();
+                                var vyborr = (TrenerTypes1)vybor.SelectedItem;
+                                tr.TrenerTypes_ID = vyborr.ID_TrenerTypes;
+                                tr.TrenerName = name.Text;
+                                tr.TrenerSurname = surname.Text;
+                                tr.TrenerMiddleName = middlename.Text;
+                                tr.Email = email.Text;
+                                tr.Passwordd = password.Text;
+                                c.Treners1Set.Add(tr);
+                                c.SaveChanges();
+                                dg.ItemsSource = c.Treners1Set.ToList();
+                                Clear();
+                            }
                         }
                     }
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Произошла ошибка: {ex.Message}");
             }
         }
 
