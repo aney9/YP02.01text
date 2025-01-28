@@ -37,5 +37,11 @@ namespace YP02._01Proga
             w.Show();
             this.Close();
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            TrenerMainWindow tr = new TrenerMainWindow();
+            tr.Show(); this.Close();
+        }
     }
 }

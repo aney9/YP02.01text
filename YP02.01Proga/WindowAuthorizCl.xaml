@@ -70,7 +70,7 @@ Background="#232323">
                     <GradientStop Color="#7F0DEB" Offset="0" />
                 </LinearGradientBrush>
             </Border.Background>
-            <Button Content="Авторизация" Foreground="White" Background="Transparent" BorderThickness="0" />
+            <Button Content="Авторизация" Foreground="White" Background="Transparent" BorderThickness="0" Click="Button_Click_2" />
         </Border>
         <Border Grid.Column="1" Grid.Row="11" CornerRadius="25">
             <Border.Background>
