@@ -43,7 +43,8 @@
                    FontFamily="Arial"/>
 
         <ListBox x:Name="List" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" Margin="0" 
-                 Foreground="White" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" IsHitTestVisible="False"/>
+                 Foreground="White" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                 IsHitTestVisible="False"/>
 
         <Border Grid.Column="1" Grid.Row="2" CornerRadius="25" Grid.ColumnSpan="3" >
             <Border.Background>

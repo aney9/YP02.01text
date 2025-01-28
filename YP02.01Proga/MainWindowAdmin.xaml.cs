@@ -33,7 +33,7 @@ namespace YP02._01Proga
 
         private void exit_click(object sender, RoutedEventArgs e)
         {
-            WindowAuthorization auth = new WindowAuthorization();
+            MainWindow auth = new MainWindow();
             auth.Show();
             this.Close();
         }

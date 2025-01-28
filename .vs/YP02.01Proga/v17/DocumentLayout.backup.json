@@ -1,12 +1,421 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|C:\\Users\\timof\\source\\repos\\YP02.01Proga\\yp02.01proga\\windowabonements.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\windowabonements.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|c:\\users\\timof\\source\\repos\\yp02.01proga\\yp02.01proga\\mainwindowadmin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\mainwindowadmin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|C:\\Users\\timof\\source\\repos\\YP02.01Proga\\yp02.01proga\\mainwindowadmin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\mainwindowadmin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|c:\\users\\timof\\source\\repos\\yp02.01proga\\yp02.01proga\\otchet.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\otchet.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|C:\\Users\\timof\\source\\repos\\YP02.01Proga\\yp02.01proga\\otchet.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\otchet.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|c:\\users\\timof\\source\\repos\\yp02.01proga\\yp02.01proga\\trenermainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\trenermainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|C:\\Users\\timof\\source\\repos\\YP02.01Proga\\yp02.01proga\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|c:\\users\\timof\\source\\repos\\yp02.01proga\\yp02.01proga\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|C:\\Users\\timof\\source\\repos\\YP02.01Proga\\yp02.01proga\\userview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\userview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|c:\\users\\timof\\source\\repos\\yp02.01proga\\yp02.01proga\\userview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\userview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|C:\\Users\\timof\\source\\repos\\YP02.01Proga\\yp02.01proga\\windowzaniyatia.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\windowzaniyatia.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|C:\\Users\\timof\\source\\repos\\YP02.01Proga\\yp02.01proga\\trenermainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\trenermainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|C:\\Users\\timof\\source\\repos\\YP02.01Proga\\yp02.01proga\\windowoblastdeistviya.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\windowoblastdeistviya.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|C:\\Users\\timof\\source\\repos\\YP02.01Proga\\yp02.01proga\\windowoplati.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\windowoplati.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|C:\\Users\\timof\\source\\repos\\YP02.01Proga\\yp02.01proga\\windowtrener.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\windowtrener.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|C:\\Users\\timof\\source\\repos\\YP02.01Proga\\yp02.01proga\\windowgroups.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\windowgroups.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|C:\\Users\\timof\\source\\repos\\YP02.01Proga\\yp02.01proga\\windowgroups.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\windowgroups.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|C:\\Users\\timof\\source\\repos\\YP02.01Proga\\yp02.01proga\\windowzaniyatia.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\windowzaniyatia.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|C:\\Users\\timof\\source\\repos\\YP02.01Proga\\yp02.01proga\\windowtypetrener.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\windowtypetrener.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|C:\\Users\\timof\\source\\repos\\YP02.01Proga\\yp02.01proga\\windowtypetrener.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\windowtypetrener.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|C:\\Users\\timof\\source\\repos\\YP02.01Proga\\yp02.01proga\\windowtrener.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\windowtrener.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|C:\\Users\\timof\\source\\repos\\YP02.01Proga\\yp02.01proga\\windowsrokiabonements.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\windowsrokiabonements.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|C:\\Users\\timof\\source\\repos\\YP02.01Proga\\yp02.01proga\\windowsrokiabonements.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\windowsrokiabonements.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|C:\\Users\\timof\\source\\repos\\YP02.01Proga\\yp02.01proga\\windowoplati.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\windowoplati.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|C:\\Users\\timof\\source\\repos\\YP02.01Proga\\yp02.01proga\\windowoblastdeistviya.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4420BA87-38CC-40BE-86D5-E8A20111A8EC}|YP02.01Proga\\YP02.01Proga.csproj|solutionrelative:yp02.01proga\\windowoblastdeistviya.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 172,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Otchet.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\Otchet.xaml.cs",
+              "RelativeDocumentMoniker": "YP02.01Proga\\Otchet.xaml.cs",
+              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\Otchet.xaml.cs",
+              "RelativeToolTip": "YP02.01Proga\\Otchet.xaml.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T19:24:25.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "YP02.01Proga\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\MainWindow.xaml.cs",
+              "RelativeToolTip": "YP02.01Proga\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAawBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T16:47:36.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TrenerMainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\TrenerMainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "YP02.01Proga\\TrenerMainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\TrenerMainWindow.xaml.cs",
+              "RelativeToolTip": "YP02.01Proga\\TrenerMainWindow.xaml.cs",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAmwKUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T11:31:34.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "YP02.01Proga\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\MainWindow.xaml",
+              "RelativeToolTip": "YP02.01Proga\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-28T11:56:19.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WindowAbonements.xaml",
+              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowAbonements.xaml",
+              "RelativeDocumentMoniker": "YP02.01Proga\\WindowAbonements.xaml",
+              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowAbonements.xaml",
+              "RelativeToolTip": "YP02.01Proga\\WindowAbonements.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-28T12:17:03.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindowAdmin.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\MainWindowAdmin.xaml.cs",
+              "RelativeDocumentMoniker": "YP02.01Proga\\MainWindowAdmin.xaml.cs",
+              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\MainWindowAdmin.xaml.cs",
+              "RelativeToolTip": "YP02.01Proga\\MainWindowAdmin.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAmwCMAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T19:24:34.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserView.xaml",
+              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\UserView.xaml",
+              "RelativeDocumentMoniker": "YP02.01Proga\\UserView.xaml",
+              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\UserView.xaml",
+              "RelativeToolTip": "YP02.01Proga\\UserView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-28T12:14:27.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\UserView.xaml.cs",
+              "RelativeDocumentMoniker": "YP02.01Proga\\UserView.xaml.cs",
+              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\UserView.xaml.cs",
+              "RelativeToolTip": "YP02.01Proga\\UserView.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T15:50:05.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "WindowOblastDeistviya.xaml",
+              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowOblastDeistviya.xaml",
+              "RelativeDocumentMoniker": "YP02.01Proga\\WindowOblastDeistviya.xaml",
+              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowOblastDeistviya.xaml",
+              "RelativeToolTip": "YP02.01Proga\\WindowOblastDeistviya.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-28T11:29:41.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "WindowOplati.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowOplati.xaml.cs",
+              "RelativeDocumentMoniker": "YP02.01Proga\\WindowOplati.xaml.cs",
+              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowOplati.xaml.cs",
+              "RelativeToolTip": "YP02.01Proga\\WindowOplati.xaml.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAIwKwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T11:29:59.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "WindowTrener.xaml",
+              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowTrener.xaml",
+              "RelativeDocumentMoniker": "YP02.01Proga\\WindowTrener.xaml",
+              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowTrener.xaml",
+              "RelativeToolTip": "YP02.01Proga\\WindowTrener.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-28T11:30:34.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "WindowGroups.xaml",
+              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowGroups.xaml",
+              "RelativeDocumentMoniker": "YP02.01Proga\\WindowGroups.xaml",
+              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowGroups.xaml",
+              "RelativeToolTip": "YP02.01Proga\\WindowGroups.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-28T11:29:23.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "WindowGroups.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowGroups.xaml.cs",
+              "RelativeDocumentMoniker": "YP02.01Proga\\WindowGroups.xaml.cs",
+              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowGroups.xaml.cs",
+              "RelativeToolTip": "YP02.01Proga\\WindowGroups.xaml.cs",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T11:29:32.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindowAdmin.xaml",
+              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\MainWindowAdmin.xaml",
+              "RelativeDocumentMoniker": "YP02.01Proga\\MainWindowAdmin.xaml",
+              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\MainWindowAdmin.xaml",
+              "RelativeToolTip": "YP02.01Proga\\MainWindowAdmin.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-28T12:06:18.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "WindowZaniyatia.xaml",
+              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowZaniyatia.xaml",
+              "RelativeDocumentMoniker": "YP02.01Proga\\WindowZaniyatia.xaml",
+              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowZaniyatia.xaml",
+              "RelativeToolTip": "YP02.01Proga\\WindowZaniyatia.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-28T11:31:14.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Otchet.xaml",
+              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\Otchet.xaml",
+              "RelativeDocumentMoniker": "YP02.01Proga\\Otchet.xaml",
+              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\Otchet.xaml",
+              "RelativeToolTip": "YP02.01Proga\\Otchet.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-28T12:06:39.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TrenerMainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\TrenerMainWindow.xaml",
+              "RelativeDocumentMoniker": "YP02.01Proga\\TrenerMainWindow.xaml",
+              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\TrenerMainWindow.xaml",
+              "RelativeToolTip": "YP02.01Proga\\TrenerMainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-28T11:31:30.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "WindowZaniyatia.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowZaniyatia.xaml.cs",
+              "RelativeDocumentMoniker": "YP02.01Proga\\WindowZaniyatia.xaml.cs",
+              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowZaniyatia.xaml.cs",
+              "RelativeToolTip": "YP02.01Proga\\WindowZaniyatia.xaml.cs",
+              "ViewState": "AgIAAKQAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T11:31:19.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "WindowTypeTrener.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowTypeTrener.xaml.cs",
+              "RelativeDocumentMoniker": "YP02.01Proga\\WindowTypeTrener.xaml.cs",
+              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowTypeTrener.xaml.cs",
+              "RelativeToolTip": "YP02.01Proga\\WindowTypeTrener.xaml.cs",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T11:31:00.282Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "WindowTypeTrener.xaml",
+              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowTypeTrener.xaml",
+              "RelativeDocumentMoniker": "YP02.01Proga\\WindowTypeTrener.xaml",
+              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowTypeTrener.xaml",
+              "RelativeToolTip": "YP02.01Proga\\WindowTypeTrener.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-28T11:30:53.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "WindowTrener.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowTrener.xaml.cs",
+              "RelativeDocumentMoniker": "YP02.01Proga\\WindowTrener.xaml.cs",
+              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowTrener.xaml.cs",
+              "RelativeToolTip": "YP02.01Proga\\WindowTrener.xaml.cs",
+              "ViewState": "AgIAAMoAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T11:30:39.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "WindowSrokiAbonements.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowSrokiAbonements.xaml.cs",
+              "RelativeDocumentMoniker": "YP02.01Proga\\WindowSrokiAbonements.xaml.cs",
+              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowSrokiAbonements.xaml.cs",
+              "RelativeToolTip": "YP02.01Proga\\WindowSrokiAbonements.xaml.cs",
+              "ViewState": "AgIAAJIAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T11:30:23.314Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "WindowSrokiAbonements.xaml",
+              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowSrokiAbonements.xaml",
+              "RelativeDocumentMoniker": "YP02.01Proga\\WindowSrokiAbonements.xaml",
+              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowSrokiAbonements.xaml",
+              "RelativeToolTip": "YP02.01Proga\\WindowSrokiAbonements.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-28T11:30:18.072Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "WindowOplati.xaml",
+              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowOplati.xaml",
+              "RelativeDocumentMoniker": "YP02.01Proga\\WindowOplati.xaml",
+              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowOplati.xaml",
+              "RelativeToolTip": "YP02.01Proga\\WindowOplati.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-28T11:29:57.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "WindowOblastDeistviya.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowOblastDeistviya.xaml.cs",
+              "RelativeDocumentMoniker": "YP02.01Proga\\WindowOblastDeistviya.xaml.cs",
+              "ToolTip": "C:\\Users\\timof\\source\\repos\\YP02.01Proga\\YP02.01Proga\\WindowOblastDeistviya.xaml.cs",
+              "RelativeToolTip": "YP02.01Proga\\WindowOblastDeistviya.xaml.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T11:29:47.723Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

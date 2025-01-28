@@ -61,24 +61,5 @@
             <Button Content="Авторизация" Foreground="White" Background="Transparent" BorderThickness="0" Click="Button_Click_2" FontSize="18" FontFamily="Arial"/>
         </Border>
 
-        <Border Grid.Column="1" Grid.Row="7" CornerRadius="25">
-            <Border.Background>
-                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                    <GradientStop Color="#FC4000" Offset="1" />
-                    <GradientStop Color="#7F0DEB" Offset="0" />
-                </LinearGradientBrush>
-            </Border.Background>
-            <Button Content="Я тренер" Foreground="White" Background="Transparent" BorderThickness="0" Click="Button_Click" FontSize="18" FontFamily="Arial" />
-        </Border>
-
-        <Border Grid.Column="3" Grid.Row="7" CornerRadius="25">
-            <Border.Background>
-                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                    <GradientStop Color="#FC4000" Offset="1" />
-                    <GradientStop Color="#7F0DEB" Offset="0" />
-                </LinearGradientBrush>
-            </Border.Background>
-            <Button Content="Я администратор" Foreground="White" Background="Transparent" BorderThickness="0" Click="Button_Click_1" FontSize="18" FontFamily="Arial"/>
-        </Border>
     </Grid>
 </Window>

@@ -12,6 +12,7 @@
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="0.2*"/>
@@ -19,11 +20,13 @@
                 <RowDefinition Height="0.2*"/>
             </Grid.RowDefinitions>
 
-            <TextBlock Grid.Row="1" Grid.Column="0" Text="{Binding NameZaniatiya}" Foreground="White"
+            <TextBlock Grid.Row="1" Grid.Column="0" Text="{Binding NameZaniatiya, StringFormat='Название занятия: {0}'}" Foreground="White"
                        HorizontalAlignment="Stretch" VerticalAlignment="Center" FontSize="20" FontFamily="Arial"/>
-            <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding DateZaniatiya}" Foreground="White"
+            <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding DateZaniatiya, StringFormat='Дата занятия: {0}'}" Foreground="White"
                        HorizontalAlignment="Stretch" VerticalAlignment="Center" FontSize="20" FontFamily="Arial"/>
-            <TextBlock Grid.Row="1" Grid.Column="2" Text="{Binding ColvoUchastnikov}" Foreground="White"
+            <TextBlock Grid.Row="1" Grid.Column="2" Text="{Binding ColvoUchastnikov, StringFormat='Кол-во участников: {0}'}" Foreground="White"
+           HorizontalAlignment="Stretch" VerticalAlignment="Center" FontSize="20" FontFamily="Arial"/>
+            <TextBlock x:Name="trener" Grid.Row="1" Grid.Column="3" Text="{Binding Trener_ID, StringFormat='Тренер: {0}'}" Foreground="White"
                        HorizontalAlignment="Stretch" VerticalAlignment="Center" FontSize="20" FontFamily="Arial"/>
         </Grid>
     </Border>

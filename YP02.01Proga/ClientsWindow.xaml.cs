@@ -218,30 +218,5 @@ namespace YP02._01Proga
             phone.Text = null;
             vybor.SelectedItem = null;
         }
-
-        ////private void vybor_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        //{
-        //    if (vybor.SelectedItem is SrokiAbonements selectedSrok)
-        //    {
-        //        string selectedText = selectedSrok.SrokAbonementa;
-        //        DateTime today = DateTime.Today;
-
-        //        switch (selectedText.ToLower())
-        //        {
-        //            case "месяц":
-        //                datakon.SelectedDate = today.AddMonths(1);
-        //                break;
-        //            case "полгода":
-        //                datakon.SelectedDate = today.AddMonths(6);
-        //                break;
-        //            case "год":
-        //                datakon.SelectedDate = today.AddYears(1);
-        //                break;
-        //            default:
-        //                datakon.SelectedDate = today;
-        //                break;
-        //        }
-        //    }
-        //}
     }
 }

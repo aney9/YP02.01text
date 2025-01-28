@@ -53,7 +53,7 @@
             </Border.Background>
         </Border>
 
-        <TextBlock Text="Здравствуйте - Админ" Grid.Column="1" Grid.Row="0" Foreground="White" VerticalAlignment="Center" FontSize="24" FontFamily="Arial"/>
+        <TextBlock Text="Здравствуйте - Администратор" Grid.Column="1" Grid.Row="0" Foreground="White" VerticalAlignment="Center" FontSize="24" FontFamily="Arial"/>
 
         <Button Grid.Column="4" Background="#232323" VerticalAlignment="Center" HorizontalAlignment="Right" BorderThickness="0" Width="85" Height="45" Click="exit_click">
             <Button.Clip>

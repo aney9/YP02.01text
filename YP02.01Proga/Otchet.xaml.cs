@@ -50,11 +50,11 @@ namespace YP02._01Proga
         private void TxtForm()
         {
             string txtFilePath2 = System.IO.Path.Combine("output_1.txt");
-            string pdfFilePath2 = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), $"Общая загрузка абонементов.pdf");
+            string pdfFilePath2 = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), $"Отчет о доходах.pdf");
             using (FileStream fs = new FileStream(txtFilePath2, FileMode.Create, FileAccess.Write, FileShare.None))
             using (StreamWriter writer = new StreamWriter(fs, Encoding.UTF8))
             {
-                string header = "Общая загрузка Абонементов";
+                string header = "Отчет о доходах";
                 int lineWidth = 70;
 
                 string CenterString(string text, int width)

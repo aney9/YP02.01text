@@ -16,8 +16,8 @@
             <Setter Property="materialDesign:TextFieldAssist.UnderlineBrush" Value="Transparent" />
         </Style>
     </Window.Resources>
-    
-    
+
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.01*"/>
@@ -132,9 +132,9 @@
                         FontSize="20" FontFamily="Arial" Background="Transparent" BorderThickness="0" Padding="20,0,0,0"/>
         </Border>
 
-        <Border Grid.Column="3" Grid.Row="12" CornerRadius="25" Background="#232323">
+        <Border Grid.Column="3" Grid.Row="12" Background="#232323">
             <DatePicker x:Name="datakon" Foreground="White" materialDesign:HintAssist.Hint="Срок окончания абонемента" FontSize="20" 
-                        FontFamily="Arial" Background="Transparent" BorderThickness="0" Padding="20,0,0,0"/>
+                        FontFamily="Arial" Background="Transparent" BorderThickness="0" Padding="20,0,0,0" DisplayDateStart="01.01.2024" DisplayDateEnd="01.01.2026"/>
         </Border>
 
         <ComboBox x:Name="vybor"  Grid.Column="3" Grid.Row="14" FontSize="20" FontFamily="Arial" Foreground="White" 
@@ -166,7 +166,5 @@
             <Button Content="Очистить поля" Foreground="White" Background="Transparent" 
                     BorderThickness="0" FontSize="24" FontFamily="Arial" Click="remove_click"/>
         </Border>
-
     </Grid>
-    
 </Window>

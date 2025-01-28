@@ -23,10 +23,6 @@ C:\Users\timof\source\repos\YP02.01Proga\YP02.01Proga\obj\Debug\YP02.01Proga.csp
 C:\Users\timof\source\repos\YP02.01Proga\YP02.01Proga\obj\Debug\YP02.01P.9352A50B.Up2Date
 C:\Users\timof\source\repos\YP02.01Proga\YP02.01Proga\obj\Debug\YP02.01Proga.exe
 C:\Users\timof\source\repos\YP02.01Proga\YP02.01Proga\obj\Debug\YP02.01Proga.pdb
-C:\Users\timof\source\repos\YP02.01Proga\YP02.01Proga\obj\Debug\WindowAuthorization.g.cs
-C:\Users\timof\source\repos\YP02.01Proga\YP02.01Proga\obj\Debug\WindowAuthorizCl.g.cs
-C:\Users\timof\source\repos\YP02.01Proga\YP02.01Proga\obj\Debug\WindowAuthorization.baml
-C:\Users\timof\source\repos\YP02.01Proga\YP02.01Proga\obj\Debug\WindowAuthorizCl.baml
 C:\Users\timof\source\repos\YP02.01Proga\YP02.01Proga\obj\Debug\MainWindowAdmin.g.cs
 C:\Users\timof\source\repos\YP02.01Proga\YP02.01Proga\obj\Debug\MainWindowAdmin.baml
 C:\Users\timof\source\repos\YP02.01Proga\YP02.01Proga\obj\Debug\ClientsWindow.g.cs
@@ -59,7 +55,6 @@ C:\Users\timof\source\repos\YP02.01Proga\YP02.01Proga\obj\Debug\TrenerMainWindow
 C:\Users\timof\source\repos\YP02.01Proga\YP02.01Proga\obj\Debug\UserView.g.cs
 C:\Users\timof\source\repos\YP02.01Proga\YP02.01Proga\obj\Debug\TrenerMainWindow.baml
 C:\Users\timof\source\repos\YP02.01Proga\YP02.01Proga\obj\Debug\UserView.baml
-C:\Users\timof\source\repos\YP02.01Proga\YP02.01Proga\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\timof\source\repos\YP02.01Proga\YP02.01Proga\bin\Debug\ICSharpCode.SharpZipLib.dll
 C:\Users\timof\source\repos\YP02.01Proga\YP02.01Proga\bin\Debug\PdfSharpCore.dll
 C:\Users\timof\source\repos\YP02.01Proga\YP02.01Proga\bin\Debug\SixLabors.Fonts.dll

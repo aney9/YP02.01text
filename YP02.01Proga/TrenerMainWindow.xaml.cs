@@ -94,8 +94,7 @@ namespace YP02._01Proga
                         x.z.NameZaniatiya,
                         x.z.DateZaniatiya,
                         x.z.ColvoUchastnikov,
-                        TrenerName = x.t.TrenerName,
-                        TrenerSurname = x.t.TrenerSurname
+                        TrenerFullName = x.t.TrenerName + " " + x.t.TrenerSurname + " " + x.t.TrenerMiddleName // формируем полное имя тренера
                     })
                     .ToList();
 
@@ -105,7 +104,7 @@ namespace YP02._01Proga
                     writer.WriteLine($"Занятие: {z.NameZaniatiya}");
                     writer.WriteLine($"Дата: {z.DateZaniatiya}");
                     writer.WriteLine($"Количество участников: {z.ColvoUchastnikov}");
-                    writer.WriteLine($"Тренер: {z.TrenerName} {z.TrenerSurname}");
+                    writer.WriteLine($"Тренер: {z.TrenerFullName}"); // выводим полное имя тренера
                     writer.WriteLine(new string('-', lineWidth));
                     totalParticipants += z.ColvoUchastnikov;
                 }
@@ -164,7 +163,7 @@ namespace YP02._01Proga
 
         private void exit_click(object sender, RoutedEventArgs e)
         {
-            WindowAuthorizCl tr = new WindowAuthorizCl();
+            MainWindow tr = new MainWindow();
             tr.Show();
             this.Close();
         }

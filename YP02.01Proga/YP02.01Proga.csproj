@@ -167,12 +167,6 @@
     <Compile Include="WindowAbonements.xaml.cs">
       <DependentUpon>WindowAbonements.xaml</DependentUpon>
     </Compile>
-    <Compile Include="WindowAuthorization.xaml.cs">
-      <DependentUpon>WindowAuthorization.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="WindowAuthorizCl.xaml.cs">
-      <DependentUpon>WindowAuthorizCl.xaml</DependentUpon>
-    </Compile>
     <Compile Include="WindowGroups.xaml.cs">
       <DependentUpon>WindowGroups.xaml</DependentUpon>
     </Compile>
@@ -233,14 +227,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WindowAbonements.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="WindowAuthorization.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="WindowAuthorizCl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

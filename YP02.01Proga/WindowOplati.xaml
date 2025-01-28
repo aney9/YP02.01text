@@ -9,7 +9,7 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         Background="#000000"
         WindowStartupLocation="CenterScreen">
-    
+
     <Window.Resources>
         <Style TargetType="TextBox" BasedOn="{StaticResource MaterialDesignTextBoxBase}" x:Key="TextBoxNoUnderline">
             <Setter Property="materialDesign:TextFieldAssist.UnderlineBrush" Value="Transparent" />
